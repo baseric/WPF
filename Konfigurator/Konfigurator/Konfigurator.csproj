@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{947E9059-0694-4DCB-8173-F57A8DF2181A}</ProjectGuid>
+    <ProjectGuid>{F54EFC33-B8DB-4AB0-BFBF-549673297BF7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WpfApplication1</RootNamespace>
-    <AssemblyName>WpfApplication1</AssemblyName>
+    <RootNamespace>Konfigurator</RootNamespace>
+    <AssemblyName>Konfigurator</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
