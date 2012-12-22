@@ -9,29 +9,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Konfigurator
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for paleta_kolorow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class paleta_kolorow : Window
     {
-        public MainWindow()
+        public paleta_kolorow()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
