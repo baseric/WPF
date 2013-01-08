@@ -15,15 +15,13 @@ using System.Windows.Shapes;
 namespace Konfigurator
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for kolor_wnetrza.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class kolor_wnetrza : Page
     {
-        public MainWindow()
+        public kolor_wnetrza()
         {
             InitializeComponent();
         }
-
-      
     }
 }

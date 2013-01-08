@@ -9,16 +9,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Konfigurator
 {
     /// <summary>
-    /// Interaction logic for paleta_kolorow.xaml
+    /// Interaction logic for podsumowanie.xaml
     /// </summary>
-    public partial class paleta_kolorow : Window
+    public partial class podsumowanie : Page
     {
-        public paleta_kolorow()
+        public podsumowanie()
         {
             InitializeComponent();
         }
