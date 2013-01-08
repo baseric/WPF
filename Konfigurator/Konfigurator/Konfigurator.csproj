@@ -55,6 +55,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="dodatki.xaml.cs">
+      <DependentUpon>dodatki.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="edycja_zamowienia.xaml.cs">
+      <DependentUpon>edycja_zamowienia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="kolor_nadwozia.xaml.cs">
+      <DependentUpon>kolor_nadwozia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="kolor_wnetrza.xaml.cs">
+      <DependentUpon>kolor_wnetrza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="podsumowanie.xaml.cs">
+      <DependentUpon>podsumowanie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="silnik.xaml.cs">
+      <DependentUpon>silnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wersja.xaml.cs">
+      <DependentUpon>wersja.xaml</DependentUpon>
+    </Compile>
+    <Page Include="dodatki.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="edycja_zamowienia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="kolor_nadwozia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="kolor_wnetrza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +104,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="podsumowanie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="silnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wersja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

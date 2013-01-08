@@ -15,17 +15,13 @@ using System.Windows.Shapes;
 namespace Konfigurator
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for konfiguratorStart.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class konfiguratorStart : Page
     {
-        public MainWindow()
+        public konfiguratorStart()
         {
             InitializeComponent();
         }
-
-       
-
-      
     }
 }
