@@ -4,23 +4,20 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="464" d:DesignWidth="398"
+      d:DesignHeight="328" d:DesignWidth="398"
 	Title="dane_klienta">
 
-    <Grid>
-        <Label Content="Imię lub nazwa firmy" Height="28" HorizontalAlignment="Left" Margin="68,59,0,0" Name="label1" VerticalAlignment="Top" />
-        <Label Content="Nazwisko" Height="28" HorizontalAlignment="Left" Margin="68,113,0,0" Name="label2" VerticalAlignment="Top" />
-        <Label Content="Adres" Height="28" HorizontalAlignment="Left" Margin="68,167,0,0" Name="label3" VerticalAlignment="Top" />
-        <Label Content="Telefon" Height="28" HorizontalAlignment="Left" Margin="68,220,0,0" Name="label4" VerticalAlignment="Top" />
-        <Label Content="NIP" Height="28" HorizontalAlignment="Left" Margin="72,286,0,0" Name="label5" VerticalAlignment="Top" />
+    <Grid Height="266">
+        <Label Content="Imię i Nazwisko lub nazwa firmy" Height="28" HorizontalAlignment="Left" Margin="30,59,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Adres" Height="28" HorizontalAlignment="Left" Margin="169,100,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Telefon" Height="28" HorizontalAlignment="Left" Margin="160,139,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="NIP" Height="28" HorizontalAlignment="Left" Margin="180,182,0,0" Name="label5" VerticalAlignment="Top" />
         <Label Content="WPROWADZ DANE KLIENTA" Height="28" HorizontalAlignment="Left" Margin="112,15,0,0" Name="label7" VerticalAlignment="Top" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="215,59,0,0" Name="textBox1" VerticalAlignment="Top" Width="120" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="215,113,0,0" Name="textBox2" VerticalAlignment="Top" Width="120" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="215,172,0,0" Name="textBox3" VerticalAlignment="Top" Width="120" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="215,225,0,0" Name="textBox4" VerticalAlignment="Top" Width="120" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="215,286,0,0" Name="textBox5" VerticalAlignment="Top" Width="120" />
-        <Button Content="Zapisz" Height="23" HorizontalAlignment="Left" Margin="160,371,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
-        <Button Content="Anuluj" Height="23" HorizontalAlignment="Left" Margin="260,371,0,0" Name="button2" VerticalAlignment="Top" Width="75" />
-        <Button Content="Eksportuj do PDF" Height="23" HorizontalAlignment="Left" Margin="25,371,0,0" Name="button3" VerticalAlignment="Top" Width="103" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="215,100,0,0" Name="textBox3" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="215,139,0,0" Name="textBox4" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="215,182,0,0" Name="textBox5" VerticalAlignment="Top" Width="120" />
+        <Button Content="Zapisz" Height="23" HorizontalAlignment="Left" Margin="134,226,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
+        <Button Content="Anuluj" Height="23" HorizontalAlignment="Left" Margin="215,226,0,0" Name="button2" VerticalAlignment="Top" Width="75" />
     </Grid>
 </Page>
