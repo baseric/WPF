@@ -7,7 +7,7 @@
       d:DesignHeight="464" d:DesignWidth="984"
 	Title="podsumowanie">
 
-    <Grid Width="954" Height="432">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"></RowDefinition>
             <RowDefinition Height="331*"></RowDefinition>
@@ -19,7 +19,7 @@
             <ColumnDefinition Width="178*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Content="Witaj w naszym konfiguratorze" Grid.Column="1" Height="28" Margin="158,12,245,0" Name="label1" VerticalAlignment="Top" />
-        <Button Content="Zamów" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" />
+        <Button Content="Przejdz do zamówienia" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="121" />
         <Button Content="zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" />
         <Label Content="Wersja:" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="115" Grid.Column="1" />
         <Image Grid.Column="1" Grid.Row="1" Height="134" Margin="409,0,67,25" Name="image1" Stretch="Fill" VerticalAlignment="Bottom" />

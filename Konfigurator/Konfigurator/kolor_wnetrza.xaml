@@ -7,7 +7,7 @@
       d:DesignHeight="464" d:DesignWidth="984"
 	Title="kolor_wnetrza">
 
-    <Grid Width="954" Height="432">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"></RowDefinition>
             <RowDefinition Height="331*"></RowDefinition>
