@@ -28,11 +28,9 @@
             <RadioButton Content="lampy ksenon" Height="16" Name="radioButton3" />
 
         </StackPanel>
-        <Image Grid.Column="1" Grid.Row="1" Height="134" Margin="259,0,67,25" Name="image1" Stretch="Fill" VerticalAlignment="Bottom" />
-        <Label Content="Wyglad" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="395,138,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="OPIS" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="380,151,0,0" Name="label3" VerticalAlignment="Top" />
         <Button Content="Wczytaj konfiguracje" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,148,0,0" Name="button3" VerticalAlignment="Top" Width="124" Grid.Column="2" />
         <Button Content="Nowa konfiguracja" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,84,0,0" Name="button4" VerticalAlignment="Top" Width="124" Grid.Column="2" />
-        <Button Content="PDF" Grid.Column="2" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="64,23,0,0" Name="button5" VerticalAlignment="Top" Width="75" />
         <WrapPanel Grid.Row="1" Height="29" HorizontalAlignment="Left" Margin="78,23,0,0" Name="wrapPanel1" VerticalAlignment="Top" Width="511" Grid.ColumnSpan="2">
             <Button Content="wersja" Height="23" Name="button6" Width="75" />
             <Button Content="silnik" Height="23" Name="button7" Width="75" />
@@ -47,5 +45,6 @@
             <RadioButton Content="podrzegwane fotele" Height="16" Name="radioButton5" />
             <RadioButton Content="szyby elektryczne" Height="16" Name="radioButton6" />
         </StackPanel>
+        <ListBox Grid.Column="1" Grid.Row="1" Height="100" HorizontalAlignment="Left" Margin="335,198,0,0" Name="listBox1" VerticalAlignment="Top" Width="120" />
     </Grid>
 </Page>
