@@ -19,9 +19,17 @@ namespace Konfigurator
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        void button4_Click(object sender, RoutedEventArgs e)
+        {
+            
+            
         }
 
        

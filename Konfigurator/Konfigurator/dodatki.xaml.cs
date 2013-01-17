@@ -23,5 +23,7 @@ namespace Konfigurator
         {
             InitializeComponent();
         }
+
+       
     }
 }

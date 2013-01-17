@@ -20,9 +20,9 @@
         <Button Content="zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" />
         <Label Content="Wersja 3 drzwiowa" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="115" Grid.Column="1" />
         <StackPanel Grid.Row="1" Height="52" HorizontalAlignment="Left" Margin="15,127,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="115" Grid.Column="1">
-            <RadioButton Content="x1" Height="16" Name="radioButton1" />
-            <RadioButton Content="x2" Height="16" Name="radioButton2" />
-            <RadioButton Content="x3" Height="16" Name="radioButton3" />
+            <RadioButton Content="basic" Height="16" Name="radioButton1" />
+            <RadioButton Content="advanced" Height="16" Name="radioButton2" />
+            <RadioButton Content="top" Height="16" Name="radioButton3" />
            
         </StackPanel>
         <Label Content="OPIS" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="380,151,0,0" Name="label3" VerticalAlignment="Top" />
@@ -38,9 +38,9 @@
         </WrapPanel>
         <Label Content="Wersja 5 drzwiowa" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="20,198,0,0" Name="label4" VerticalAlignment="Top" />
         <StackPanel Grid.Column="1" Grid.Row="1" Height="51" HorizontalAlignment="Left" Margin="15,223,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="114">
-            <RadioButton Content="x1" Height="16" Name="radioButton4" />
-            <RadioButton Content="x2" Height="16" Name="radioButton5" />
-            <RadioButton Content="x3" Height="16" Name="radioButton6" />
+            <RadioButton Content="basic" Height="16" Name="radioButton4" />
+            <RadioButton Content="advanced" Height="16" Name="radioButton5" />
+            <RadioButton Content="top" Height="16" Name="radioButton6" />
         </StackPanel>
         <ListBox Grid.Column="1" Grid.Row="1" Height="100" HorizontalAlignment="Left" Margin="335,198,0,0" Name="listBox1" VerticalAlignment="Top" Width="120" />
     </Grid>
