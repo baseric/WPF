@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CustomCommands.cs" />
     <Compile Include="dane_klienta.xaml.cs">
       <DependentUpon>dane_klienta.xaml</DependentUpon>
     </Compile>
@@ -71,6 +72,7 @@
     <Compile Include="kolor_wnetrza.xaml.cs">
       <DependentUpon>kolor_wnetrza.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ModelToBackgroundConverter.cs" />
     <Compile Include="MyDB.cs" />
     <Compile Include="podsumowanie.xaml.cs">
       <DependentUpon>podsumowanie.xaml</DependentUpon>

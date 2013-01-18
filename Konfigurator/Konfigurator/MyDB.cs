@@ -12,10 +12,10 @@ namespace Konfigurator
 
         static MyDB()
         {
-            list.Add(new Zamowienie("Jan", "Kowalski", "", ""));
-            list.Add(new Zamowienie("Roman", "Kowalski", "", ""));
-            list.Add(new Zamowienie("Zdzisław", "Kowalski", "", ""));
-            list.Add(new Zamowienie("Wiesław", "Kowalski", "", ""));
+            Klient k = new Klient("asd","ul. asd 1/21", "15-000", "asd", "1234567890");
+            Pojazd p = new Pojazd();
+            list.Add(new Zamowienie(k, p));
+            list.Add(new Zamowienie(k, p));
         }
 
         private static MyDB singleton = null;
@@ -28,6 +28,11 @@ namespace Konfigurator
                     singleton = new MyDB();
                 return singleton;
             }
+        }
+
+        public Collection<Zamowienie> GetZamowienia()
+        {
+            return list;
         }
     }
 }

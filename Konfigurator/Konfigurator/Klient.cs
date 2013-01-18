@@ -7,19 +7,24 @@ namespace Konfigurator
 {
     class Klient
     {
-        String name;
-        String adres;
-        String kod;
-        String msc;
-        String nip;
+        string name;
+        string adres;
+        string kod;
+        string msc;
+        string nip;
 
-        public Klient(String _name, String _adres, String _kod, String _msc, String _nip)
+        public Klient(string _name, string _adres, string _kod, string _msc, string _nip)
         {
             name = _name;
             adres = _adres;
             kod = _kod;
             msc = _msc;
             nip = _nip;
+        }
+
+        public string getName()
+        {
+            return name;
         }
     }
 }
