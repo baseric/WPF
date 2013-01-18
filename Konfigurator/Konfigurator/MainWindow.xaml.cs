@@ -19,7 +19,6 @@ namespace Konfigurator
     /// </summary>
     public partial class MainWindow : Window
     {
-        //asd
         
         public MainWindow()
         {
@@ -58,11 +57,13 @@ namespace Konfigurator
 
         private void Usun(object sender, ExecutedRoutedEventArgs e)
         {
-            /*ListBox lb = e.Parameter as ListBox;
+            ListBox lb = e.Parameter as ListBox;
 
-            lb.Items.Insert(0, Zdjete.Text);
-            Zdjete.Text = "";
-            lb.Items.Refresh();*/
+            if (MessageBox.Show("Czy na pewno chcesz usunąć zamówienie?", "Usuwanie", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                MyDB.Instance.RemoveZamowienie((Zamowienie)lb.SelectedItem);
+            }
+            
 
             e.Handled = true;
         }

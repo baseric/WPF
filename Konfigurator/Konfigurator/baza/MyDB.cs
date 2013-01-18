@@ -34,5 +34,10 @@ namespace Konfigurator
         {
             return list;
         }
+
+        public void RemoveZamowienie(Zamowienie z)
+        {
+            list.Remove(z);
+        }
     }
 }
