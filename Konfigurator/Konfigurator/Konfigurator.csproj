@@ -64,21 +64,25 @@
     <Compile Include="edycja_zamowienia.xaml.cs">
       <DependentUpon>edycja_zamowienia.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klient.cs" />
     <Compile Include="kolor_nadwozia.xaml.cs">
       <DependentUpon>kolor_nadwozia.xaml</DependentUpon>
     </Compile>
     <Compile Include="kolor_wnetrza.xaml.cs">
       <DependentUpon>kolor_wnetrza.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyDB.cs" />
     <Compile Include="podsumowanie.xaml.cs">
       <DependentUpon>podsumowanie.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pojazd.cs" />
     <Compile Include="silnik.xaml.cs">
       <DependentUpon>silnik.xaml</DependentUpon>
     </Compile>
     <Compile Include="wersja.xaml.cs">
       <DependentUpon>wersja.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Zamowienie.cs" />
     <Page Include="dane_klienta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
