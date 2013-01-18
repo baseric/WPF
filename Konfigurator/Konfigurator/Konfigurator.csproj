@@ -59,33 +59,41 @@
     <Compile Include="dane_klienta.xaml.cs">
       <DependentUpon>dane_klienta.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dodaj.xaml.cs">
+      <DependentUpon>Dodaj.xaml</DependentUpon>
+    </Compile>
     <Compile Include="dodatki.xaml.cs">
       <DependentUpon>dodatki.xaml</DependentUpon>
     </Compile>
     <Compile Include="edycja_zamowienia.xaml.cs">
       <DependentUpon>edycja_zamowienia.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klient.cs" />
-    <Compile Include="kolor_nadwozia.xaml.cs">
+    <Compile Include="baza\Klient.cs" />
+    <Compile Include="PageDodaj\kolor_nadwozia.xaml.cs">
       <DependentUpon>kolor_nadwozia.xaml</DependentUpon>
     </Compile>
-    <Compile Include="kolor_wnetrza.xaml.cs">
+    <Compile Include="PageDodaj\kolor_wnetrza.xaml.cs">
       <DependentUpon>kolor_wnetrza.xaml</DependentUpon>
     </Compile>
     <Compile Include="ModelToBackgroundConverter.cs" />
-    <Compile Include="MyDB.cs" />
+    <Compile Include="baza\MyDB.cs" />
     <Compile Include="podsumowanie.xaml.cs">
       <DependentUpon>podsumowanie.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pojazd.cs" />
-    <Compile Include="silnik.xaml.cs">
+    <Compile Include="baza\Pojazd.cs" />
+    <Compile Include="PageDodaj\silnik.xaml.cs">
       <DependentUpon>silnik.xaml</DependentUpon>
     </Compile>
-    <Compile Include="wersja.xaml.cs">
+    <Compile Include="Switcher.cs" />
+    <Compile Include="PageDodaj\wersja.xaml.cs">
       <DependentUpon>wersja.xaml</DependentUpon>
     </Compile>
     <Compile Include="Zamowienie.cs" />
     <Page Include="dane_klienta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dodaj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,11 +105,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="kolor_nadwozia.xaml">
+    <Page Include="PageDodaj\kolor_nadwozia.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="kolor_wnetrza.xaml">
+    <Page Include="PageDodaj\kolor_wnetrza.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,11 +129,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="silnik.xaml">
+    <Page Include="PageDodaj\silnik.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="wersja.xaml">
+    <Page Include="PageDodaj\wersja.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

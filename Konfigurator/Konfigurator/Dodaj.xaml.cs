@@ -9,19 +9,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Navigation;
 
 namespace Konfigurator
 {
     /// <summary>
-    /// Interaction logic for wersja.xaml
+    /// Interaction logic for Dodaj.xaml
     /// </summary>
-    public partial class wersja : Page
+    public partial class Dodaj : Window
     {
-        public wersja()
+        public Dodaj()
         {
             InitializeComponent();
+            Switcher.dodaj = this;
+            Switcher.Switch(new wersja());  
         }
+
+        public void Navigate(Page nextPage)
+        {
+            this.Content = nextPage;
+        }
+
     }
 }

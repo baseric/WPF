@@ -77,6 +77,18 @@ namespace Konfigurator
 
             e.Handled = true;
         }
+
+        private void btnNew_Click(object sender, RoutedEventArgs e)
+        {
+            Dodaj win = new Dodaj();
+
+            if ((bool)win.ShowDialog())
+            {
+
+               // users.Add(new User(win.Imie, win.Nazwisko, win.Email));
+
+            }
+        }
       
     }
 }
