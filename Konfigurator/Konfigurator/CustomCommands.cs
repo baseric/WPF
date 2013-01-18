@@ -14,9 +14,9 @@ namespace Konfigurator
 
         static CustomCommands()
         {
-            edytuj = new RoutedUICommand("Zdejmij krążek", "Zdejmij", typeof(CustomCommands));
-            usun = new RoutedUICommand("Połóż krążek", "Połóż", typeof(CustomCommands));
-            eksport = new RoutedUICommand("Połóż krążek", "Połóż", typeof(CustomCommands));
+            edytuj = new RoutedUICommand("Edytuj zamowienie", "Edytuj", typeof(CustomCommands));
+            usun = new RoutedUICommand("Usun zamowienie", "Usun", typeof(CustomCommands));
+            eksport = new RoutedUICommand("Eksportuj do pdf", "Eksportuj", typeof(CustomCommands));
         }
 
         public static RoutedUICommand Edytuj
