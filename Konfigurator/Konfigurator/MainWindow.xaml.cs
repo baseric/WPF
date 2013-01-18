@@ -19,7 +19,7 @@ namespace Konfigurator
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        //asd
         
         public MainWindow()
         {
