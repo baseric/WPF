@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Konfigurator
 {
-    class Pojazd
+    public class Pojazd
     {
         private string model;
         public string Model
