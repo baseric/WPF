@@ -28,5 +28,10 @@ namespace Konfigurator
         {
             Switcher.Switch(new kolor_wnetrza());
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.close(false);
+        }
     }
 }

@@ -28,5 +28,10 @@ namespace Konfigurator
         {
             Switcher.Switch(new dodatki());
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.close(false);
+        }
     }
 }
