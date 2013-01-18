@@ -19,6 +19,9 @@ namespace Konfigurator
     /// </summary>
     public partial class Dodaj : Window
     {
+
+        public Pojazd p = new Pojazd();
+
         public Dodaj()
         {
             InitializeComponent();

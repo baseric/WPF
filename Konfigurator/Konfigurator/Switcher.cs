@@ -20,5 +20,10 @@ namespace Konfigurator
             dodaj.DialogResult = dialog;
             dodaj.Close();
         }
+
+        public Pojazd getPojazd()
+        {
+            return dodaj.p;
+        }
     }
 }
