@@ -20,6 +20,14 @@ namespace Konfigurator
             status = "Nowe";
         }
 
+        public Zamowienie(Klient _k, Pojazd _p, DateTime _date)
+        {
+            k = _k;
+            p = _p;
+            date = _date;
+            status = "Nowe";
+        }
+
         public string getKlient
         {
             get
@@ -49,6 +57,30 @@ namespace Konfigurator
             get
             {
                 return date.ToString("d-MM-yyyy");
+            }
+        }
+
+        public int getDataRok
+        {
+            get
+            {
+                return int.Parse(date.ToString("yyyy"));
+            }
+        }
+
+        public int getDataMiesiac
+        {
+            get
+            {
+                return int.Parse(date.ToString("MM"));
+            }
+        }
+
+        public int getDataDzien
+        {
+            get
+            {
+                return int.Parse(date.ToString("d"));
             }
         }
 

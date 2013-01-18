@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CustomCommands.cs" />
+    <Compile Include="DataGrouper.cs" />
     <Compile Include="PageDodaj\dane_klienta.xaml.cs">
       <DependentUpon>dane_klienta.xaml</DependentUpon>
     </Compile>
@@ -92,7 +93,7 @@
     <Compile Include="PageDodaj\wersja.xaml.cs">
       <DependentUpon>wersja.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Zamowienie.cs" />
+    <Compile Include="baza\Zamowienie.cs" />
     <Page Include="PageDodaj\dane_klienta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace Konfigurator
 {
@@ -19,6 +20,7 @@ namespace Konfigurator
     /// </summary>
     public partial class MainWindow : Window
     {
+        ListCollectionView view;
         
         public MainWindow()
         {
@@ -28,6 +30,14 @@ namespace Konfigurator
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             lbZamowienia.ItemsSource = MyDB.Instance.GetZamowienia();
+
+            view = CollectionViewSource.GetDefaultView(lbZamowienia.ItemsSource) as ListCollectionView;
+
+            view.SortDescriptions.Add(new SortDescription("getDataRok", ListSortDirection.Descending));
+            view.SortDescriptions.Add(new SortDescription("getDataMiesiac", ListSortDirection.Descending));
+            view.SortDescriptions.Add(new SortDescription("getDataRok", ListSortDirection.Ascending));
+            DataGrouper grouper = new DataGrouper();
+            view.GroupDescriptions.Add(new PropertyGroupDescription("getData", grouper));
         }
 
         private void EditCanExecute(object sender, CanExecuteRoutedEventArgs e)

@@ -16,6 +16,11 @@ namespace Konfigurator
             Pojazd p = new Pojazd();
             list.Add(new Zamowienie(k, p));
             list.Add(new Zamowienie(k, p));
+            list.Add(new Zamowienie(k, p, DateTime.Now.AddMonths(-1)));
+            list.Add(new Zamowienie(k, p, DateTime.Now.AddDays(-5)));
+            list.Add(new Zamowienie(k, p, DateTime.Now.AddMonths(-1)));
+            list.Add(new Zamowienie(k, p, DateTime.Now.AddMonths(-2)));
+            list.Add(new Zamowienie(k, p, DateTime.Now.AddDays(-17)));
         }
 
         private static MyDB singleton = null;
