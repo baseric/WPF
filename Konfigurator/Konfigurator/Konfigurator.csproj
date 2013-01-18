@@ -89,6 +89,7 @@
       <DependentUpon>silnik.xaml</DependentUpon>
     </Compile>
     <Compile Include="RadioButtonToStringConverter.cs" />
+    <Compile Include="RokFilter.cs" />
     <Compile Include="Switcher.cs" />
     <Compile Include="PageDodaj\wersja.xaml.cs">
       <DependentUpon>wersja.xaml</DependentUpon>

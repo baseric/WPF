@@ -45,7 +45,16 @@
         <Button Content="Nowe zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,29,0,0" Name="btnNew" VerticalAlignment="Top" Width="146" Click="btnNew_Click" />
         <Label Content="Krzysztof Czeszel, Jacek Piotr Bajsicki" Grid.Column="1" Grid.Row="2" Height="33" HorizontalAlignment="Left" Margin="134,8,0,0" Name="label2" VerticalAlignment="Top" />
         <Button Content="Usuń zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,152,0,0" Name="btnDel" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Usun" CommandParameter="{Binding ElementName=lbZamowienia}" />
-        <ListBox Grid.Column="1" Grid.Row="1" Name="lbZamowienia" Margin="5" ItemTemplate="{StaticResource DataTemplate}">
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <ListBox Name="lbZamowienia" Margin="5" ItemTemplate="{StaticResource DataTemplate}">
             <ListBox.GroupStyle>
                 <GroupStyle>
                     <GroupStyle.HeaderTemplate>
@@ -56,6 +65,18 @@
                 </GroupStyle>
             </ListBox.GroupStyle>
         </ListBox>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="Rok od" Margin="3" />
+                <TextBox Name="RokOd" Text="2013" Margin="3" />
+                <Label Content="do" Margin="3" />
+                <TextBox Name="RokDo" Text="2013" Margin="3" />
+                <Button Content="Zastosuj filtr" Margin="3" Click="FiltrRok" />
+                <Button Content="Usuń filtr" Margin="3" Click="FiltrCancel" />
+            </StackPanel>
+            
+        </Grid>
+        
         <Button Content="Eksportuj do PDF" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,212,0,0" Name="btnExport" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Eksport" CommandParameter="{Binding ElementName=lbZamowienia}" />
     </Grid>
    

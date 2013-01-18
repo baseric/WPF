@@ -52,6 +52,14 @@ namespace Konfigurator
             }
         }
 
+        public DateTime Date
+        {
+            get
+            {
+                return date;
+            }
+        }
+
         public string getData
         {
             get

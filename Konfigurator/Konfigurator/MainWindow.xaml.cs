@@ -100,6 +100,27 @@ namespace Konfigurator
 
             }
         }
+
+        private void FiltrRok(object sender, RoutedEventArgs e)
+        {
+            int min;
+            int max;
+            if ((int.TryParse(RokOd.Text, out min)) && (int.TryParse(RokDo.Text, out max)))
+            {
+
+                if (view != null)
+                {
+                    RokFilter filter = new RokFilter(min, max);
+                    view.Filter = filter.FilterItem;
+                }
+            }
+        }
+
+        private void FiltrCancel(object sender, RoutedEventArgs e)
+        {
+            if (view != null)
+                view.Filter = null;
+        }
       
     }
 }
