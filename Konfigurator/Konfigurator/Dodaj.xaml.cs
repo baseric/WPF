@@ -23,7 +23,7 @@ namespace Konfigurator
         {
             InitializeComponent();
             Switcher.dodaj = this;
-            Switcher.Switch(new wersja());  
+            Switcher.Switch(new model());  
         }
 
         public void Navigate(Page nextPage)

@@ -14,5 +14,11 @@ namespace Konfigurator
         {
             dodaj.Navigate(newPage);
         }
+
+        public static void close(bool dialog)
+        {
+            dodaj.DialogResult = dialog;
+            dodaj.Close();
+        }
     }
 }
