@@ -3,8 +3,19 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Konfigurator"
       mc:Ignorable="d" Title="wersja" d:DesignHeight="464" d:DesignWidth="984">
-      <Grid>
+
+    <Page.Resources>
+        <local:RadioButtonToStringConverter x:Key="RadioButtonToStringConverter" />
+        <local:Switcher x:Key="Switcher" />
+    </Page.Resources>
+
+    <Page.CommandBindings>
+        <CommandBinding Command="local:CustomCommands.Dalej" Executed="Dalej" CanExecute="DalejCanExecute" />
+    </Page.CommandBindings>
+
+    <Grid DataContext="{Binding Path=Pojazd, Source={StaticResource Switcher}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"></RowDefinition>
             <RowDefinition Height="331*"></RowDefinition>
@@ -16,13 +27,19 @@
             <ColumnDefinition Width="178*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Content="Witaj w naszym konfiguratorze" Grid.Column="1" Height="28" Margin="158,12,245,0" Name="label1" VerticalAlignment="Top" />
-        <Button Content="dalej" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="button1_Click" />
+        <Button Content="dalej" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Command="local:CustomCommands.Dalej" />
         <Button Content="zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" />
         <Label Content="Wersja 3 drzwiowa" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="115" Grid.Column="1" />
         <StackPanel Grid.Row="1" Height="52" HorizontalAlignment="Left" Margin="15,127,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="115" Grid.Column="1">
-            <RadioButton Content="basic" Height="16" Name="radioButton1" />
-            <RadioButton Content="advanced" Height="16" Name="radioButton2" />
-            <RadioButton Content="top" Height="16" Name="radioButton3" />
+            <RadioButton Content="basic" Height="16" Name="radioButton1" GroupName="wersja" IsChecked="{Binding Path=Wersja, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=basic}" />
+            <RadioButton Content="advanced" Height="16" Name="radioButton2" GroupName="wersja" IsChecked="{Binding Path=Wersja, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=advanced}"/>
+            <RadioButton Content="top" Height="16" Name="radioButton3" GroupName="wersja" IsChecked="{Binding Path=Wersja, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=top}"/>
            
         </StackPanel>
         <Label Content="OPIS" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="380,151,0,0" Name="label3" VerticalAlignment="Top" />
@@ -39,9 +56,9 @@
         </WrapPanel>
         <Label Content="Wersja 5 drzwiowa" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="20,198,0,0" Name="label4" VerticalAlignment="Top" />
         <StackPanel Grid.Column="1" Grid.Row="1" Height="51" HorizontalAlignment="Left" Margin="15,223,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="114">
-            <RadioButton Content="basic" Height="16" Name="radioButton4" />
-            <RadioButton Content="advanced" Height="16" Name="radioButton5" />
-            <RadioButton Content="top" Height="16" Name="radioButton6" />
+            <RadioButton Content="basic" Height="16" Name="radioButton4" GroupName="wersja" />
+            <RadioButton Content="advanced" Height="16" Name="radioButton5" GroupName="wersja" />
+            <RadioButton Content="top" Height="16" Name="radioButton6" GroupName="wersja" />
         </StackPanel>
         <ListBox Grid.Column="1" Grid.Row="1" Height="100" HorizontalAlignment="Left" Margin="335,198,0,0" Name="listBox1" VerticalAlignment="Top" Width="120" />
     </Grid>

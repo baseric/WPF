@@ -24,9 +24,49 @@ namespace Konfigurator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void Dalej(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new silnik());
+        }
+
+        private void DalejCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = false;
+
+            if (radioButton1 == null)
+                return;
+
+            if ((bool)radioButton1.IsChecked)
+            {
+                e.CanExecute = true;
+                return;
+            }
+            else if ((bool)radioButton2.IsChecked)
+            {
+                e.CanExecute = true;
+                return;
+            }
+            else if ((bool)radioButton3.IsChecked)
+            {
+                e.CanExecute = true;
+                return;
+            }
+            else if ((bool)radioButton4.IsChecked)
+            {
+                e.CanExecute = true;
+                return;
+            }
+            else if ((bool)radioButton5.IsChecked)
+            {
+                e.CanExecute = true;
+                return;
+            }
+            else if ((bool)radioButton6.IsChecked)
+            {
+                e.CanExecute = true;
+                return;
+            }
+
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
