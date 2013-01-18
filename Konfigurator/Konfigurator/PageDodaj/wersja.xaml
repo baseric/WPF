@@ -56,9 +56,15 @@
         </WrapPanel>
         <Label Content="Wersja 5 drzwiowa" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="20,198,0,0" Name="label4" VerticalAlignment="Top" />
         <StackPanel Grid.Column="1" Grid.Row="1" Height="51" HorizontalAlignment="Left" Margin="15,223,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="114">
-            <RadioButton Content="basic" Height="16" Name="radioButton4" GroupName="wersja" />
-            <RadioButton Content="advanced" Height="16" Name="radioButton5" GroupName="wersja" />
-            <RadioButton Content="top" Height="16" Name="radioButton6" GroupName="wersja" />
+            <RadioButton Content="basic" Height="16" Name="radioButton4" GroupName="wersja" IsChecked="{Binding Path=Wersja, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=basic5}"/>
+            <RadioButton Content="advanced" Height="16" Name="radioButton5" GroupName="wersja" IsChecked="{Binding Path=Wersja, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=advanced5}"/>
+            <RadioButton Content="top" Height="16" Name="radioButton6" GroupName="wersja" IsChecked="{Binding Path=Wersja, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=top5}"/>
         </StackPanel>
         <ListBox Grid.Column="1" Grid.Row="1" Height="100" HorizontalAlignment="Left" Margin="335,198,0,0" Name="listBox1" VerticalAlignment="Top" Width="120" />
     </Grid>
