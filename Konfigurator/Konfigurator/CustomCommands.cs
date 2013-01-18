@@ -11,12 +11,14 @@ namespace Konfigurator
         public static RoutedUICommand edytuj;
         public static RoutedUICommand usun;
         public static RoutedUICommand eksport;
+        public static RoutedUICommand dalej;
 
         static CustomCommands()
         {
             edytuj = new RoutedUICommand("Edytuj zamowienie", "Edytuj", typeof(CustomCommands));
             usun = new RoutedUICommand("Usun zamowienie", "Usun", typeof(CustomCommands));
             eksport = new RoutedUICommand("Eksportuj do pdf", "Eksportuj", typeof(CustomCommands));
+            dalej = new RoutedUICommand("Przejdz dalej", "Dalej", typeof(CustomCommands));
         }
 
         public static RoutedUICommand Edytuj
@@ -32,6 +34,11 @@ namespace Konfigurator
         public static RoutedUICommand Eksport
         {
             get { return eksport; }
+        }
+
+        public static RoutedUICommand Dalej
+        {
+            get { return dalej; }
         }
     }
 }

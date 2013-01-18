@@ -21,9 +21,10 @@ namespace Konfigurator
             dodaj.Close();
         }
 
-        public Pojazd getPojazd()
+        public static Pojazd Pojazd
         {
-            return dodaj.p;
+            set { dodaj.p = value; }
+            get { return dodaj.p; }
         }
     }
 }

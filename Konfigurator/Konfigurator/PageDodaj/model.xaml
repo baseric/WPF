@@ -3,11 +3,21 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Konfigurator"
       mc:Ignorable="d" 
       d:DesignHeight="464" d:DesignWidth="984"
 	Title="model">
+    
+    <Page.Resources>
+        <local:RadioButtonToStringConverter x:Key="RadioButtonToStringConverter" />
+        <local:Switcher x:Key="Switcher" />
+    </Page.Resources>
+    
+    <Page.CommandBindings>
+        <CommandBinding Command="local:CustomCommands.Dalej" Executed="Dalej" CanExecute="DalejCanExecute" />
+    </Page.CommandBindings>
 
-    <Grid>
+    <Grid DataContext="{Binding Path=Pojazd, Source={StaticResource Switcher}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"></RowDefinition>
             <RowDefinition Height="331*"></RowDefinition>
@@ -19,14 +29,22 @@
             <ColumnDefinition Width="178*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Content="Witaj w naszym konfiguratorze" Grid.Column="1" Height="28" Margin="158,12,245,0" Name="label1" VerticalAlignment="Top" />
-        <Button Content="dalej" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="button1_Click" />
+        <Button Content="dalej" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Command="local:CustomCommands.Dalej" />
         <Button Content="zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" />
         <Label Content="Model" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="115" Grid.Column="1" />
         <StackPanel Grid.Row="1" Height="67" HorizontalAlignment="Left" Margin="15,127,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="115" Grid.Column="1">
-            <RadioButton Content="a1" Height="16" Name="radioButton1" />
-            <RadioButton Content="a2" Height="16" Name="radioButton2" />
-            <RadioButton Content="a3" Height="16" Name="radioButton3" />
-            <RadioButton Content="a4" Height="16" Name="radioButton4" />
+            <RadioButton Content="a1" Height="16" Name="radioButton1" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=a1}" />
+            <RadioButton Content="a2" Height="16" Name="radioButton2" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=a2}" />
+            <RadioButton Content="a3" Height="16" Name="radioButton3" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=a3}" />
+            <RadioButton Content="a4" Height="16" Name="radioButton4" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=a4}" />
             
         </StackPanel>
         <Label Content="OPIS" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="380,151,0,0" Name="label3" VerticalAlignment="Top" />
