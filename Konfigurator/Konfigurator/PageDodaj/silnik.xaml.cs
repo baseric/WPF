@@ -23,5 +23,10 @@ namespace Konfigurator
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new kolor_nadwozia());
+        }
     }
 }

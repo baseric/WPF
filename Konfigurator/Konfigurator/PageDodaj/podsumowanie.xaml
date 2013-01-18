@@ -19,7 +19,7 @@
             <ColumnDefinition Width="178*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Content="Witaj w naszym konfiguratorze" Grid.Column="1" Height="28" Margin="158,12,245,0" Name="label1" VerticalAlignment="Top" />
-        <Button Content="Przejdz do zamówienia" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="121" />
+        <Button Content="Przejdz do zamówienia" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="121" Click="button1_Click" />
         <Button Content="zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" />
         <Label Content="Wersja:" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="115" Grid.Column="1" />
         <Button Content="Wczytaj konfiguracje" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,148,0,0" Name="button3" VerticalAlignment="Top" Width="124" Grid.Column="2" />

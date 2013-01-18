@@ -15,15 +15,18 @@ using System.Windows.Shapes;
 namespace Konfigurator
 {
     /// <summary>
-    /// Interaction logic for dodatki.xaml
+    /// Interaction logic for model.xaml
     /// </summary>
-    public partial class dodatki : Page
+    public partial class model : Page
     {
-        public dodatki()
+        public model()
         {
             InitializeComponent();
         }
 
-       
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new wersja());
+        }
     }
 }

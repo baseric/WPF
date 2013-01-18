@@ -15,13 +15,25 @@ using System.Windows.Shapes;
 namespace Konfigurator
 {
     /// <summary>
-    /// Interaction logic for model.xaml
+    /// Interaction logic for dodatki.xaml
     /// </summary>
-    public partial class model : Page
+    public partial class dodatki : Page
     {
-        public model()
+        public dodatki()
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new podsumowanie());
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+       
     }
 }
