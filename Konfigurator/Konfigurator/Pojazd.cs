@@ -6,7 +6,13 @@ using System.Text;
 namespace Konfigurator
 {
     class Pojazd
-    {             
+    {
+        private string model;
+        public string Model
+        {
+            set { model = value; }
+            get { return model; }
+        }
         
         private string wersja;
         public string Wersja
