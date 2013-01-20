@@ -33,9 +33,7 @@ namespace Konfigurator
 
             view = CollectionViewSource.GetDefaultView(lbZamowienia.ItemsSource) as ListCollectionView;
 
-            view.SortDescriptions.Add(new SortDescription("getDataRok", ListSortDirection.Descending));
-            view.SortDescriptions.Add(new SortDescription("getDataMiesiac", ListSortDirection.Descending));
-            view.SortDescriptions.Add(new SortDescription("getDataRok", ListSortDirection.Ascending));
+            view.SortDescriptions.Add(new SortDescription("Date", ListSortDirection.Descending));
 
             DataGrouper grouper = new DataGrouper();
             view.GroupDescriptions.Add(new PropertyGroupDescription("getData", grouper));
@@ -57,11 +55,22 @@ namespace Konfigurator
 
         private void Edytuj(object sender, ExecutedRoutedEventArgs e)
         {
-            /*ListBox lb = e.Parameter as ListBox;
+            ListBox lb = e.Parameter as ListBox;
 
-            lb.Items.Insert(0, Zdjete.Text);
-            Zdjete.Text = "";
-            lb.Items.Refresh();*/
+            Dodaj win = new Dodaj();
+
+            label1.Content = ((Zamowienie)lb.SelectedItem).Pojazd.Model;
+
+            win.P = ((Zamowienie)lb.SelectedItem).Pojazd;
+            win.K = ((Zamowienie)lb.SelectedItem).Klient;
+            win.edycja = true;
+
+            if ((bool)win.ShowDialog())
+            {
+                MyDB.Instance.AddZamowienie(win.k, win.p);
+            }
+
+            label1.Content = win.P.Model;
 
             e.Handled = true;
         }
@@ -96,9 +105,7 @@ namespace Konfigurator
 
             if ((bool)win.ShowDialog())
             {
-
-               // users.Add(new User(win.Imie, win.Nazwisko, win.Email));
-
+                MyDB.Instance.AddZamowienie(win.k, win.p);
             }
         }
 

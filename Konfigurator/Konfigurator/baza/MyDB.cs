@@ -14,6 +14,7 @@ namespace Konfigurator
         {
             Klient k = new Klient("asd","ul. asd 1/21", "15-000", "asd", "1234567890");
             Pojazd p = new Pojazd();
+            p.Model = "a3";
             list.Add(new Zamowienie(k, p));
             list.Add(new Zamowienie(k, p));
             list.Add(new Zamowienie(k, p, DateTime.Now.AddMonths(-1)));

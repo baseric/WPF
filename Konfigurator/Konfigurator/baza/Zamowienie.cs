@@ -52,6 +52,22 @@ namespace Konfigurator
             }
         }
 
+        public Pojazd Pojazd
+        {
+            get
+            {
+                return p;
+            }
+        }
+
+        public Klient Klient
+        {
+            get
+            {
+                return k;
+            }
+        }
+
         public DateTime Date
         {
             get
@@ -64,31 +80,7 @@ namespace Konfigurator
         {
             get
             {
-                return date.ToString("d-MM-yyyy");
-            }
-        }
-
-        public int getDataRok
-        {
-            get
-            {
-                return int.Parse(date.ToString("yyyy"));
-            }
-        }
-
-        public int getDataMiesiac
-        {
-            get
-            {
-                return int.Parse(date.ToString("MM"));
-            }
-        }
-
-        public int getDataDzien
-        {
-            get
-            {
-                return int.Parse(date.ToString("d"));
+                return date.ToString("dd-MM-yyyy");
             }
         }
 

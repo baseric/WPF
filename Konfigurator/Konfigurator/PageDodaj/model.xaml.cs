@@ -33,25 +33,25 @@ namespace Konfigurator
         {
             e.CanExecute = false;
 
-            if (radioButton1 == null)
+            if (rbModel1 == null)
                 return;
 
-            if ((bool)radioButton1.IsChecked)
+            if ((bool)rbModel1.IsChecked)
             {
                 e.CanExecute = true;
                 return;
             }
-            else if ((bool)radioButton2.IsChecked)
+            else if ((bool)rbModel2.IsChecked)
             {
                 e.CanExecute = true;
                 return;
             }
-            else if ((bool)radioButton3.IsChecked)
+            else if ((bool)rbModel3.IsChecked)
             {
                 e.CanExecute = true;
                 return;
             }
-            else if ((bool)radioButton4.IsChecked)
+            else if ((bool)rbModel4.IsChecked)
             {
                 e.CanExecute = true;
                 return;

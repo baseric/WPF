@@ -23,14 +23,20 @@ namespace Konfigurator
 
         public static Pojazd Pojazd
         {
-            set { dodaj.p = value; }
-            get { return dodaj.p; }
+            set { dodaj.P = value; }
+            get { return dodaj.P; }
         }
 
         public static Klient Klient
         {
-            set { dodaj.k = value; }
-            get { return dodaj.k; }
+            set { dodaj.K = value; }
+            get { return dodaj.K; }
+        }
+
+        public static bool Edycja
+        {
+            set { dodaj.edycja = value; }
+            get { return dodaj.edycja; }
         }
     }
 }

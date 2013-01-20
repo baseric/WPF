@@ -33,35 +33,35 @@ namespace Konfigurator
         {
             e.CanExecute = false;
 
-            if (radioButton1 == null)
+            if (rbWersja1 == null)
                 return;
 
-            if ((bool)radioButton1.IsChecked)
+            if ((bool)rbWersja1.IsChecked)
             {
                 e.CanExecute = true;
                 return;
             }
-            else if ((bool)radioButton2.IsChecked)
+            else if ((bool)rbWersja2.IsChecked)
             {
                 e.CanExecute = true;
                 return;
             }
-            else if ((bool)radioButton3.IsChecked)
+            else if ((bool)rbWersja3.IsChecked)
             {
                 e.CanExecute = true;
                 return;
             }
-            else if ((bool)radioButton4.IsChecked)
+            else if ((bool)rbWersja4.IsChecked)
             {
                 e.CanExecute = true;
                 return;
             }
-            else if ((bool)radioButton5.IsChecked)
+            else if ((bool)rbWersja5.IsChecked)
             {
                 e.CanExecute = true;
                 return;
             }
-            else if ((bool)radioButton6.IsChecked)
+            else if ((bool)rbWersja6.IsChecked)
             {
                 e.CanExecute = true;
                 return;

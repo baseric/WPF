@@ -26,8 +26,7 @@ namespace Konfigurator
 
         private void Zapisz(object sender, RoutedEventArgs e)
         {
-            MyDB.Instance.AddZamowienie(Switcher.Klient,Switcher.Pojazd);
-            Switcher.close(false);
+            Switcher.close(true);
         }
 
         private void DalejCanExecute(object sender, CanExecuteRoutedEventArgs e)

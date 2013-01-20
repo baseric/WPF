@@ -22,6 +22,7 @@ namespace Konfigurator
 
         public Pojazd p = new Pojazd();
         public Klient k = new Klient();
+        public bool edycja = false;
 
         public Dodaj()
         {
@@ -33,6 +34,18 @@ namespace Konfigurator
         public void Navigate(Page nextPage)
         {
             this.Content = nextPage;
+        }
+
+        public Pojazd P
+        {
+            set { p = value; }
+            get { return p; }
+        }
+
+        public Klient K
+        {
+            set { k = value; }
+            get { return k; }
         }
 
     }
