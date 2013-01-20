@@ -26,5 +26,11 @@ namespace Konfigurator
             set { dodaj.p = value; }
             get { return dodaj.p; }
         }
+
+        public static Klient Klient
+        {
+            set { dodaj.k = value; }
+            get { return dodaj.k; }
+        }
     }
 }

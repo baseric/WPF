@@ -21,6 +21,7 @@ namespace Konfigurator
     {
 
         public Pojazd p = new Pojazd();
+        public Klient k = new Klient();
 
         public Dodaj()
         {

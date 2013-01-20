@@ -35,6 +35,11 @@ namespace Konfigurator
             }
         }
 
+        public void AddZamowienie(Klient k, Pojazd p)
+        {
+            list.Add(new Zamowienie(k, p));
+        }
+
         public Collection<Zamowienie> GetZamowienia()
         {
             return list;

@@ -36,6 +36,7 @@ namespace Konfigurator
             view.SortDescriptions.Add(new SortDescription("getDataRok", ListSortDirection.Descending));
             view.SortDescriptions.Add(new SortDescription("getDataMiesiac", ListSortDirection.Descending));
             view.SortDescriptions.Add(new SortDescription("getDataRok", ListSortDirection.Ascending));
+
             DataGrouper grouper = new DataGrouper();
             view.GroupDescriptions.Add(new PropertyGroupDescription("getData", grouper));
         }

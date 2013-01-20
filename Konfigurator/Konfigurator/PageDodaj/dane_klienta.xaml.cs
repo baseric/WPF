@@ -26,6 +26,7 @@ namespace Konfigurator
 
         private void Zapisz(object sender, RoutedEventArgs e)
         {
+            MyDB.Instance.AddZamowienie(Switcher.Klient,Switcher.Pojazd);
             Switcher.close(false);
         }
 
@@ -33,7 +34,7 @@ namespace Konfigurator
         {
             e.CanExecute = false;
 
-            if (textBox1 != null && textBox2!= null && textBox3!=null && textBox4!=null )
+            if (!tbNazwa.Equals("") && !tbMsc.Equals("") && tbNip != null && tbTel != null)
                 e.CanExecute = true;          
           
         }

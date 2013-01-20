@@ -84,11 +84,11 @@ namespace Konfigurator
             get { return podgrz_siedzenia; }
         }
 
-        public String Dodatki
+        public string Dodatki
         {
             set { }
             get {
-                String dodatki = "";
+                string dodatki = "";
                 if (felgi)
                 {
                     dodatki += "Felgi aluminiowe, ";
