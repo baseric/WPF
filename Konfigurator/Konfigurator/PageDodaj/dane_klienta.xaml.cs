@@ -24,6 +24,24 @@ namespace Konfigurator
             InitializeComponent();
         }
 
-       
+        private void Zapisz(object sender, RoutedEventArgs e)
+        {
+            Switcher.close(false);
+        }
+
+        private void DalejCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = false;
+
+            if (textBox1 != null && textBox2!= null && textBox3!=null && textBox4!=null )
+                e.CanExecute = true;          
+          
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.close(false);
+        }
+     
     }
 }
