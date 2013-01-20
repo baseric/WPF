@@ -22,6 +22,14 @@ namespace Konfigurator
         public wersja()
         {
             InitializeComponent();
+
+            if (Switcher.Pojazd.Model.Equals("a7"))
+            {
+                rbWersja1.IsEnabled = false;
+                rbWersja2.IsEnabled = false;
+                rbWersja3.IsEnabled = false;
+                Switcher.Pojazd.Wersja = "";
+            }
         }
 
         private void Dalej(object sender, RoutedEventArgs e)
