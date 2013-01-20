@@ -57,13 +57,13 @@
         </WrapPanel>
         <Label Content="Diesel" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="20,198,0,0" Name="label4" VerticalAlignment="Top" />
         <StackPanel Grid.Column="1" Grid.Row="1" Height="51" HorizontalAlignment="Left" Margin="15,223,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="114">
-            <RadioButton Content="1.7" Height="16" Name="radioButton4" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, 
+            <RadioButton Content="1.7" Height="16" Name="radioButton4" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay,
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=1.7}" />
-            <RadioButton Content="1.9" Height="16" Name="radioButton5" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, 
+            <RadioButton Content="1.9" Height="16" Name="radioButton5" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay,
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=1.9}"/>
-            <RadioButton Content="2.0" Height="16" Name="radioButton6" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, 
+            <RadioButton Content="2.0" Height="16" Name="radioButton6" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay,
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=2.0}"/>
         </StackPanel>
