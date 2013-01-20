@@ -84,6 +84,25 @@ namespace Konfigurator
             get { return podgrz_siedzenia; }
         }
 
+        public Pojazd()
+        {
+        }
+
+        public Pojazd(Pojazd p)
+        {
+            model = p.Model;
+            wersja = p.Wersja;
+            silnik = p.Silnik;
+            kolor_nadwozia = p.Kolor_nadwozia;
+            kolor_wnetrza = p.kolor_wnetrza;
+            felgi = p.Felgi;
+            chrom = p.Chrom;
+            ksenony = p.Ksenony;
+            kliamtyzacja = p.Klimatyzacja;
+            radio = p.Radio;
+            podgrz_siedzenia = p.Podgrz_siedzenia;
+        }
+
         public string Dodatki
         {
             set { }

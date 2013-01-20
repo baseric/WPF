@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel;
 
 namespace Konfigurator
 {
-    class Zamowienie
+    class Zamowienie : INotifyPropertyChanged
     {
         Klient k;
         Pojazd p;
@@ -54,6 +55,11 @@ namespace Konfigurator
 
         public Pojazd Pojazd
         {
+            set
+            {
+                p = value;
+                OnPropertyChanged("");
+            }
             get
             {
                 return p;
@@ -62,6 +68,11 @@ namespace Konfigurator
 
         public Klient Klient
         {
+            set
+            {
+                k = value;
+                OnPropertyChanged("");
+            }
             get
             {
                 return k;
@@ -90,6 +101,14 @@ namespace Konfigurator
             {
                 return "K";
             }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this,
+                         new PropertyChangedEventArgs(property));
         }
     }
 }

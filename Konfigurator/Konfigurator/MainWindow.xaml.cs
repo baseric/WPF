@@ -57,20 +57,19 @@ namespace Konfigurator
         {
             ListBox lb = e.Parameter as ListBox;
 
-            Dodaj win = new Dodaj();
+            Dodaj win = new Dodaj(new Pojazd(((Zamowienie)lb.SelectedItem).Pojazd), new Klient(((Zamowienie)lb.SelectedItem).Klient));
 
-            label1.Content = ((Zamowienie)lb.SelectedItem).Pojazd.Model;
-
-            win.P = ((Zamowienie)lb.SelectedItem).Pojazd;
-            win.K = ((Zamowienie)lb.SelectedItem).Klient;
+            //win.P = ((Zamowienie)lb.SelectedItem).Pojazd;
+            //win.K = ((Zamowienie)lb.SelectedItem).Klient;
             win.edycja = true;
 
             if ((bool)win.ShowDialog())
             {
-                MyDB.Instance.AddZamowienie(win.k, win.p);
+                ((Zamowienie)lb.SelectedItem).Pojazd = win.P;
+                ((Zamowienie)lb.SelectedItem).Klient = win.K;
+                //MyDB.Instance.RemoveZamowienie((Zamowienie)lb.SelectedItem);
+                //MyDB.Instance.AddZamowienie(win.k, win.p);
             }
-
-            label1.Content = win.P.Model;
 
             e.Handled = true;
         }
@@ -101,7 +100,7 @@ namespace Konfigurator
 
         private void btnNew_Click(object sender, RoutedEventArgs e)
         {
-            Dodaj win = new Dodaj();
+            Dodaj win = new Dodaj(new Pojazd(), new Klient());
 
             if ((bool)win.ShowDialog())
             {

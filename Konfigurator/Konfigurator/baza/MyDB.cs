@@ -12,9 +12,15 @@ namespace Konfigurator
 
         static MyDB()
         {
-            Klient k = new Klient("asd","ul. asd 1/21", "15-000", "asd", "1234567890");
+            Klient k = new Klient("asd","ul. asd 1/21", "15-000", "asd", "1234567890", "0700");
             Pojazd p = new Pojazd();
             p.Model = "a3";
+            p.Wersja = "advanced";
+            p.Silnik = "1.6";
+            p.Kolor_nadwozia = "zlotymet";
+            p.Kolor_wnetrza = "czarnask";
+            p.Klimatyzacja = true;
+            p.Radio = true;
             list.Add(new Zamowienie(k, p));
             list.Add(new Zamowienie(k, p));
             list.Add(new Zamowienie(k, p, DateTime.Now.AddMonths(-1)));

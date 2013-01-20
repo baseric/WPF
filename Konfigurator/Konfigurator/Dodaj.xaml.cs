@@ -20,12 +20,14 @@ namespace Konfigurator
     public partial class Dodaj : Window
     {
 
-        public Pojazd p = new Pojazd();
-        public Klient k = new Klient();
+        public Pojazd p;
+        public Klient k;
         public bool edycja = false;
 
-        public Dodaj()
+        public Dodaj(Pojazd _p, Klient _k)
         {
+            p = _p;
+            k = _k;
             InitializeComponent();
             Switcher.dodaj = this;
             Switcher.Switch(new model());  

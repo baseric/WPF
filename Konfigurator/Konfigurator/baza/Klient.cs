@@ -18,13 +18,24 @@ namespace Konfigurator
         {
         }
 
-        public Klient(string _name, string _adres, string _kod, string _msc, string _nip)
+        public Klient(Klient k)
+        {
+            name = k.Name;
+            adres = k.Adres;
+            kod = k.Kod;
+            msc = k.Msc;
+            nip = k.Nip;
+            tel = k.Tel;
+        }
+
+        public Klient(string _name, string _adres, string _kod, string _msc, string _nip, string _tel)
         {
             name = _name;
             adres = _adres;
             kod = _kod;
             msc = _msc;
             nip = _nip;
+            tel = _tel;
         }
 
         public string getName()
