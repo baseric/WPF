@@ -2,43 +2,44 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel;
 
 namespace Konfigurator
 {
-    public class Pojazd
+    public class Pojazd : INotifyPropertyChanged
     {
         private string model;
         public string Model
         {
-            set { model = value; }
+            set { model = value; OnPropertyChanged(""); }
             get { return model; }
         }
         
         private string wersja;
         public string Wersja
         {
-            set { wersja = value;  }
+            set { wersja = value; OnPropertyChanged(""); }
             get { return wersja; }
         } 
 
         private string silnik;
         public string Silnik
         {
-            set { silnik = value; }
+            set { silnik = value; OnPropertyChanged(""); }
             get { return silnik; }
         }
 
         private string kolor_wnetrza;
         public string Kolor_wnetrza
         {
-            set { kolor_wnetrza = value;  }
+            set { kolor_wnetrza = value; OnPropertyChanged(""); }
             get { return kolor_wnetrza; }
         }
 
         private string kolor_nadwozia;
         public string Kolor_nadwozia
         {
-            set { kolor_nadwozia = value;  }
+            set { kolor_nadwozia = value; OnPropertyChanged(""); }
             get { return kolor_nadwozia; }
         }  
 
@@ -82,6 +83,11 @@ namespace Konfigurator
         {
             set { podgrz_siedzenia = value;  }
             get { return podgrz_siedzenia; }
+        }
+
+        public Pojazd Self
+        {
+            get { return this; }
         }
 
         public Pojazd()
@@ -134,6 +140,14 @@ namespace Konfigurator
                 }
                 return dodatki; 
             }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this,
+                         new PropertyChangedEventArgs(property));
         }
     }
 }

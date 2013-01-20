@@ -53,6 +53,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -100,6 +101,7 @@
     <Compile Include="PageDodaj\silnik.xaml.cs">
       <DependentUpon>silnik.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PojazdToImageConverter.cs" />
     <Compile Include="RadioButtonToStringConverter.cs" />
     <Compile Include="RokFilter.cs" />
     <Compile Include="Switcher.cs" />
@@ -181,46 +183,46 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\a1\a1 bialy 3 drzwi.jpg" />
-    <Resource Include="images\a1\a1 bialy.jpg" />
-    <Resource Include="images\a1\a1 brazowy 3 drzwi.jpg" />
-    <Resource Include="images\a1\a1 brazowy.jpg" />
-    <Resource Include="images\a1\a1 czarny 3 drzwi.jpg" />
-    <Resource Include="images\a1\a1 czarny.jpg" />
-    <Resource Include="images\a1\a1 czerwony 3 drzwi.jpg" />
-    <Resource Include="images\a1\a1 czerwony.jpg" />
-    <Resource Include="images\a1\a1 niebieski 3 drzwi.jpg" />
-    <Resource Include="images\a1\a1 niebieski.jpg" />
-    <Resource Include="images\a1\a1 srebrny 3 drzwi.jpg" />
-    <Resource Include="images\a1\a1 srebrny.jpg" />
+    <Resource Include="images\a1\a1bialy3drzwi.jpg" />
+    <Resource Include="images\a1\a1bialy.jpg" />
+    <Resource Include="images\a1\a1brazowy3drzwi.jpg" />
+    <Resource Include="images\a1\a1brazowy.jpg" />
+    <Resource Include="images\a1\a1czarny3drzwi.jpg" />
+    <Resource Include="images\a1\a1czarny.jpg" />
+    <Resource Include="images\a1\a1czerwony3drzwi.jpg" />
+    <Resource Include="images\a1\a1czerwony.jpg" />
+    <Resource Include="images\a1\a1niebieski3drzwi.jpg" />
+    <Resource Include="images\a1\a1niebieski.jpg" />
+    <Resource Include="images\a1\a1srebrny3drzwi.jpg" />
+    <Resource Include="images\a1\a1srebrny.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\a3\a3 bialy 3 drzwi.jpg" />
-    <Resource Include="images\a3\a3 bialy.jpg" />
-    <Resource Include="images\a3\a3 brazowy 3 drzwi.jpg" />
-    <Resource Include="images\a3\a3 brazowy.jpg" />
-    <Resource Include="images\a3\a3 czarny 3 drzwi.jpg" />
-    <Resource Include="images\a3\a3 czarny.jpg" />
-    <Resource Include="images\a3\a3 czerwony 3 drzwi.jpg" />
-    <Resource Include="images\a3\a3 czerwony.jpg" />
-    <Resource Include="images\a3\a3 niebieski 3 drzwi.jpg" />
-    <Resource Include="images\a3\a3 niebieski.jpg" />
-    <Resource Include="images\a3\a3 srebrny 3 drzwi.jpg" />
-    <Resource Include="images\a3\a3 srebrny.jpg" />
+    <Resource Include="images\a3\a3bialy3drzwi.jpg" />
+    <Resource Include="images\a3\a3bialy.jpg" />
+    <Resource Include="images\a3\a3brazowy3drzwi.jpg" />
+    <Resource Include="images\a3\a3brazowy.jpg" />
+    <Resource Include="images\a3\a3czarny3drzwi.jpg" />
+    <Resource Include="images\a3\a3czarny.jpg" />
+    <Resource Include="images\a3\a3czerwony3drzwi.jpg" />
+    <Resource Include="images\a3\a3czerwony.jpg" />
+    <Resource Include="images\a3\a3niebieski3drzwi.jpg" />
+    <Resource Include="images\a3\a3niebieski.jpg" />
+    <Resource Include="images\a3\a3srebrny3drzwi.jpg" />
+    <Resource Include="images\a3\a3srebrny.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\a5\a5 bialy 3 drzwi.jpg" />
-    <Resource Include="images\a5\a5 bialy.jpg" />
-    <Resource Include="images\a5\a5 brazowy 3 drzwi.jpg" />
-    <Resource Include="images\a5\a5 brazowy.jpg" />
-    <Resource Include="images\a5\a5 czarny 3 drzwi.jpg" />
-    <Resource Include="images\a5\a5 czarny.jpg" />
-    <Resource Include="images\a5\a5 czerwony 3 drzwi.jpg" />
-    <Resource Include="images\a5\a5 czerwony.jpg" />
-    <Resource Include="images\a5\a5 niebieski 3 drzwi.jpg" />
-    <Resource Include="images\a5\a5 niebieski.jpg" />
-    <Resource Include="images\a5\a5 srebrny 3 drzwi.jpg" />
-    <Resource Include="images\a5\a5 srebrny.jpg" />
+    <Resource Include="images\a5\a5bialy3drzwi.jpg" />
+    <Resource Include="images\a5\a5bialy.jpg" />
+    <Resource Include="images\a5\a5brazowy3drzwi.jpg" />
+    <Resource Include="images\a5\a5brazowy.jpg" />
+    <Resource Include="images\a5\a5czarny3drzwi.jpg" />
+    <Resource Include="images\a5\a5czarny.jpg" />
+    <Resource Include="images\a5\a5czerwony3drzwi.jpg" />
+    <Resource Include="images\a5\a5czerwony.jpg" />
+    <Resource Include="images\a5\a5niebieski3drzwi.jpg" />
+    <Resource Include="images\a5\a5niebieski.jpg" />
+    <Resource Include="images\a5\a5srebrny3drzwi.jpg" />
+    <Resource Include="images\a5\a5srebrny.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\a7\bialy.jpg" />

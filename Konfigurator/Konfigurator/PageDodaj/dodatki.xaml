@@ -9,6 +9,7 @@
 	Title="dodatki">
    
     <Page.Resources>
+        <local:PojazdToImageConverter x:Key="PojazdToImageConverter" />
         <local:Switcher x:Key="Switcher" />
     </Page.Resources>
 
@@ -33,7 +34,6 @@
             <CheckBox Content="Elementy chromowane" Height="16" Name="checkBox2" IsChecked="{Binding Path=Chrom}" />
             <CheckBox Content="Reflektory ksenonowe" Height="16" Name="checkBox3" IsChecked="{Binding Path=Ksenony}" />
         </StackPanel>
-        <Label Content="OPIS" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="380,151,0,0" Name="label3" VerticalAlignment="Top" />
         <Button Content="Wczytaj konfiguracje" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,148,0,0" Name="button3" VerticalAlignment="Top" Width="124" Grid.Column="2" />
         <Button Content="Nowa konfiguracja" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,84,0,0" Name="btnNowaKonfiguracja" VerticalAlignment="Top" Width="124" Grid.Column="2" Click="btnNowaKonfiguracja_Click" />
         <WrapPanel Grid.Row="1" Height="46" HorizontalAlignment="Left" Margin="78,23,0,0" Name="wrapPanel1" VerticalAlignment="Top" Width="585" Grid.Column="1">
@@ -51,6 +51,6 @@
             <CheckBox Content="Radio" Height="16" Name="checkBox5" IsChecked="{Binding Path=Radio}" />
             <CheckBox Content="Podgrzewane siedzenia" Height="16" Name="checkBox6" IsChecked="{Binding Path=Podgrz_siedzenia}" />
         </StackPanel>
-        <ListBox Grid.Column="1" Grid.Row="1" Height="100" HorizontalAlignment="Left" Margin="335,198,0,0" Name="listBox1" VerticalAlignment="Top" Width="120" />
+        <Image Grid.Column="1" Grid.Row="1" Name="img" Margin="190,90,0,0" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Source="{Binding Path=Self, Converter={StaticResource PojazdToImageConverter}}" />
     </Grid>
 </Page>

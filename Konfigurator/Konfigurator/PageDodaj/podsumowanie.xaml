@@ -9,6 +9,7 @@
 	Title="podsumowanie">
 
     <Page.Resources>
+        <local:PojazdToImageConverter x:Key="PojazdToImageConverter" />
         <local:Switcher x:Key="Switcher" />
     </Page.Resources>
 
@@ -54,5 +55,6 @@
             <Label Content="Kolor wnętrza:" Height="28" Name="label6" />
             <Label Content="Dodatki:" Height="28" Name="label7" />
         </StackPanel>
+        <Image Grid.Column="1" Grid.Row="1" Name="img" Margin="350,120,0,0" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Source="{Binding Path=Self, Converter={StaticResource PojazdToImageConverter}}" />
     </Grid>
 </Page>

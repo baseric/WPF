@@ -9,6 +9,7 @@
 	Title="kolor_nadwozia">
     <Page.Resources>
         <local:RadioButtonToStringConverter x:Key="RadioButtonToStringConverter" />
+        <local:PojazdToImageConverter x:Key="PojazdToImageConverter" />
         <local:Switcher x:Key="Switcher" />
   
 
@@ -46,7 +47,6 @@
                                  ConverterParameter=czerwonyzw}"/>
 
         </StackPanel>
-        <Label Content="OPIS" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="380,147,0,0" Name="label3" VerticalAlignment="Top" />
         <Button Content="Wczytaj konfiguracje" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,148,0,0" Name="button3" VerticalAlignment="Top" Width="124" Grid.Column="2" />
         <Button Content="Nowa konfiguracja" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,84,0,0" Name="btnNowaKonfiguracja" VerticalAlignment="Top" Width="124" Grid.Column="2" Click="btnNowaKonfiguracja_Click" />
         <WrapPanel Grid.Row="1" Height="49" HorizontalAlignment="Left" Margin="78,23,0,0" Name="wrapPanel1" VerticalAlignment="Top" Width="585" Grid.Column="1">
@@ -60,16 +60,16 @@
         </WrapPanel>
         <Label Content="metalik" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="20,198,0,0" Name="label4" VerticalAlignment="Top" />
         <StackPanel Grid.Column="1" Grid.Row="1" Height="51" HorizontalAlignment="Left" Margin="15,223,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="114">
-            <RadioButton Content="szary" Height="16" Name="radioButton4" GroupName="kolor_nadwozia4" IsChecked="{Binding Path=Kolor_nadwozia, 
+            <RadioButton Content="srebrny" Height="16" Name="radioButton4" GroupName="kolor_nadwozia4" IsChecked="{Binding Path=Kolor_nadwozia, 
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=szarymet}" />
+                                 ConverterParameter=srebrnymet}" />
             <RadioButton Content="niebieski" Height="16" Name="radioButton5" GroupName="kolor_nadwozia5" IsChecked="{Binding Path=Kolor_nadwozia,
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=niebieskimet}"/>
-            <RadioButton Content="zloty" Height="16" Name="radioButton6" GroupName="kolor_nadwozia6" IsChecked="{Binding Path=Kolor_nadwozia,
+            <RadioButton Content="brazowy" Height="16" Name="radioButton6" GroupName="kolor_nadwozia6" IsChecked="{Binding Path=Kolor_nadwozia,
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=zlotymet}"/>
+                                 ConverterParameter=brazowymet}"/>
         </StackPanel>
-        <ListBox Grid.Column="1" Grid.Row="1" Height="100" HorizontalAlignment="Left" Margin="335,198,0,0" Name="listBox1" VerticalAlignment="Top" Width="120" />
+        <Image Grid.Column="1" Grid.Row="1" Name="img" Margin="160,90,0,0" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Source="{Binding Path=Self, Converter={StaticResource PojazdToImageConverter}}" />
     </Grid>
 </Page>
