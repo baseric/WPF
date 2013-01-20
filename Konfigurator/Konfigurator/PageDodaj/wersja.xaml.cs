@@ -19,8 +19,12 @@ namespace Konfigurator
     /// </summary>
     public partial class wersja : Page
     {
-        public wersja()
+        int postep;
+
+        public wersja(int _postep)
         {
+            postep = _postep;
+
             if (Switcher.Pojazd.Model.Equals("a7"))
             {
                 if (Switcher.Pojazd.Wersja != null)
@@ -37,16 +41,39 @@ namespace Konfigurator
                 rbWersja1.IsEnabled = false;
                 rbWersja2.IsEnabled = false;
                 rbWersja3.IsEnabled = false;
-                /*Switcher.Pojazd.Wersja = "";
-                rbWersja1.IsChecked = false;
-                rbWersja2.IsChecked = false;
-                rbWersja3.IsChecked = false;*/
+            }
+
+            switch (postep)
+            {
+                case 0:
+                    btnModel.Visibility = System.Windows.Visibility.Visible;
+                    break;
+                case 1:
+                    btnWersja.Visibility = System.Windows.Visibility.Visible;
+                    goto case 0;
+                case 2:
+                    btnSilnik.Visibility = System.Windows.Visibility.Visible;
+                    goto case 1;
+                case 3:
+                    btnKolorNadwozia.Visibility = System.Windows.Visibility.Visible;
+                    goto case 2;
+                case 4:
+                    btnKolorWnetrza.Visibility = System.Windows.Visibility.Visible;
+                    goto case 3;
+                case 5:
+                    btnDodatki.Visibility = System.Windows.Visibility.Visible;
+                    goto case 4;
+                case 6:
+                    btnPodsumowanie.Visibility = System.Windows.Visibility.Visible;
+                    goto case 5;
             }
         }
 
         private void Dalej(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new silnik());
+            if (postep < 2)
+                postep = 2;
+            Switcher.Switch(new silnik(postep));
         }
 
         private void DalejCanExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -96,13 +123,13 @@ namespace Konfigurator
 
         private void Wstecz(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new model());
+            Switcher.Switch(new model(postep));
         }
 
         private void btnNowaKonfiguracja_Click(object sender, RoutedEventArgs e)
         {
             Switcher.Pojazd = new Pojazd();
-            Switcher.Switch(new model());
+            Switcher.Switch(new model(0));
         }
     }
 }

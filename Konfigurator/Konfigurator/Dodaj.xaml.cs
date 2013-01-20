@@ -22,15 +22,14 @@ namespace Konfigurator
 
         public Pojazd p;
         public Klient k;
-        public bool edycja = false;
 
-        public Dodaj(Pojazd _p, Klient _k)
+        public Dodaj(Pojazd _p, Klient _k, int postep)
         {
             p = _p;
             k = _k;
             InitializeComponent();
             Switcher.dodaj = this;
-            Switcher.Switch(new model());  
+            Switcher.Switch(new model(postep));  
         }
 
         public void Navigate(Page nextPage)

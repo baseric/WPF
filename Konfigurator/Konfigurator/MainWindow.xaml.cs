@@ -57,9 +57,7 @@ namespace Konfigurator
         {
             ListBox lb = e.Parameter as ListBox;
 
-            Dodaj win = new Dodaj(new Pojazd(((Zamowienie)lb.SelectedItem).Pojazd), new Klient(((Zamowienie)lb.SelectedItem).Klient));
-
-            win.edycja = true;
+            Dodaj win = new Dodaj(new Pojazd(((Zamowienie)lb.SelectedItem).Pojazd), new Klient(((Zamowienie)lb.SelectedItem).Klient), 6);
 
             if ((bool)win.ShowDialog())
             {
@@ -96,7 +94,7 @@ namespace Konfigurator
 
         private void btnNew_Click(object sender, RoutedEventArgs e)
         {
-            Dodaj win = new Dodaj(new Pojazd(), new Klient());
+            Dodaj win = new Dodaj(new Pojazd(), new Klient(), 0);
 
             if ((bool)win.ShowDialog())
             {

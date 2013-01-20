@@ -34,10 +34,5 @@ namespace Konfigurator
             get { return dodaj.K; }
         }
 
-        public static bool Edycja
-        {
-            set { dodaj.edycja = value; }
-            get { return dodaj.edycja; }
-        }
     }
 }

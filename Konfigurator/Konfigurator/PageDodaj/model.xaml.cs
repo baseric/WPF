@@ -19,14 +19,45 @@ namespace Konfigurator
     /// </summary>
     public partial class model : Page
     {
-        public model()
+        int postep;
+
+        public model(int _postep)
         {
+            postep = _postep;
+
             InitializeComponent();
+
+            switch (postep)
+            {
+                case 0:
+                    btnModel.Visibility = System.Windows.Visibility.Visible;
+                    break;
+                case 1:
+                    btnWersja.Visibility = System.Windows.Visibility.Visible;
+                    goto case 0;
+                case 2:
+                    btnSilnik.Visibility = System.Windows.Visibility.Visible;
+                    goto case 1;
+                case 3:
+                    btnKolorNadwozia.Visibility = System.Windows.Visibility.Visible;
+                    goto case 2;
+                case 4:
+                    btnKolorWnetrza.Visibility = System.Windows.Visibility.Visible;
+                    goto case 3;
+                case 5:
+                    btnDodatki.Visibility = System.Windows.Visibility.Visible;
+                    goto case 4;
+                case 6:
+                    btnPodsumowanie.Visibility = System.Windows.Visibility.Visible;
+                    goto case 5;
+            }
         }
 
         private void Dalej(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new wersja());
+            if (postep < 1)
+                postep = 1;
+            Switcher.Switch(new wersja(postep));
         }
 
         private void DalejCanExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -67,7 +98,7 @@ namespace Konfigurator
         private void btnNowaKonfiguracja_Click(object sender, RoutedEventArgs e)
         {
             Switcher.Pojazd = new Pojazd();
-            Switcher.Switch(new model());
+            Switcher.Switch(new model(0));
         }
 
     }
