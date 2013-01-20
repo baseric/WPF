@@ -17,8 +17,8 @@ namespace Konfigurator
             p.Model = "a3";
             p.Wersja = "advanced";
             p.Silnik = "1.6";
-            p.Kolor_nadwozia = "zlotymet";
-            p.Kolor_wnetrza = "czarnask";
+            p.Kolor_nadwozia = "srebrnymet";
+            p.Kolor_wnetrza = "brazowask";
             p.Klimatyzacja = true;
             p.Radio = true;
             list.Add(new Zamowienie(k, p));

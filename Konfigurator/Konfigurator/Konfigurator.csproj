@@ -109,6 +109,7 @@
       <DependentUpon>wersja.xaml</DependentUpon>
     </Compile>
     <Compile Include="baza\Zamowienie.cs" />
+    <Compile Include="TapicerkaToImageConverter.cs" />
     <Page Include="PageDodaj\dane_klienta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -253,6 +254,14 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bezowa materialowa.jpg" />
+    <Resource Include="images\bezowa skora.jpg" />
+    <Resource Include="images\brazowa skora.jpg" />
+    <Resource Include="images\czarna materialowa.jpg" />
+    <Resource Include="images\satynowa skora.jpg" />
+    <Resource Include="images\srebrna materialowa.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
