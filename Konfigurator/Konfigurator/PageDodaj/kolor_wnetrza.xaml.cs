@@ -78,5 +78,11 @@ namespace Konfigurator
         {
             Switcher.Switch(new kolor_nadwozia());
         }
+
+        private void btnNowaKonfiguracja_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Pojazd = new Pojazd();
+            Switcher.Switch(new model());
+        }
     }
 }

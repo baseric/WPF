@@ -79,5 +79,11 @@ namespace Konfigurator
         {
             Switcher.Switch(new wersja());
         }
+
+        private void btnNowaKonfiguracja_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Pojazd = new Pojazd();
+            Switcher.Switch(new model());
+        }
     }
 }

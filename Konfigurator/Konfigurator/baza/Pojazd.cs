@@ -83,5 +83,38 @@ namespace Konfigurator
             set { podgrz_siedzenia = value;  }
             get { return podgrz_siedzenia; }
         }
+
+        public String Dodatki
+        {
+            set { }
+            get {
+                String dodatki = "";
+                if (felgi)
+                {
+                    dodatki += "Felgi aluminiowe, ";
+                }
+                if (chrom)
+                {
+                    dodatki += "Elementy chromowane, ";
+                }
+                if (ksenony)
+                {
+                    dodatki += "Reflektory ksenonowe, ";
+                }
+                if (kliamtyzacja)
+                {
+                    dodatki += "Klimatyzacja, ";
+                }
+                if (radio)
+                {
+                    dodatki += "Radio, ";
+                }
+                if (podgrz_siedzenia)
+                {
+                    dodatki += "Podgrzewane siedzenia, ";
+                }
+                return dodatki; 
+            }
+        }
     }
 }
