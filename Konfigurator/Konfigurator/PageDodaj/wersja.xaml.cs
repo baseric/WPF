@@ -23,7 +23,8 @@ namespace Konfigurator
         {
             if (Switcher.Pojazd.Model.Equals("a7"))
             {
-                Switcher.Pojazd.Wersja = "";
+                if (Switcher.Pojazd.Wersja.Equals("basic") || Switcher.Pojazd.Wersja.Equals("advanced") || Switcher.Pojazd.Wersja.Equals("top"))
+                    Switcher.Pojazd.Wersja = "";
             }
 
             InitializeComponent();
