@@ -21,6 +21,11 @@ namespace Konfigurator
     {
         public wersja()
         {
+            if (Switcher.Pojazd.Model.Equals("a7"))
+            {
+                Switcher.Pojazd.Wersja = "";
+            }
+
             InitializeComponent();
 
             if (Switcher.Pojazd.Model.Equals("a7"))
@@ -28,7 +33,10 @@ namespace Konfigurator
                 rbWersja1.IsEnabled = false;
                 rbWersja2.IsEnabled = false;
                 rbWersja3.IsEnabled = false;
-                Switcher.Pojazd.Wersja = "";
+                /*Switcher.Pojazd.Wersja = "";
+                rbWersja1.IsChecked = false;
+                rbWersja2.IsChecked = false;
+                rbWersja3.IsChecked = false;*/
             }
         }
 

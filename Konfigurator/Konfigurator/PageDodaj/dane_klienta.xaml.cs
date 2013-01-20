@@ -33,7 +33,7 @@ namespace Konfigurator
         {
             e.CanExecute = false;
 
-            if (!tbNazwa.Equals("") && !tbMsc.Equals("") && tbNip != null && tbTel != null)
+            if (!tbNazwa.Text.Equals("") && !tbMsc.Text.Equals("") & !tbAdres.Text.Equals("") & !tbKod.Text.Equals("") & !tbNip.Text.Equals("") & !tbTel.Text.Equals(""))
                 e.CanExecute = true;          
           
         }

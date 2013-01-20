@@ -34,13 +34,13 @@
         <Button Content="Zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" Click="Zamknij" />
         <Label Content="Tapicerka materiałowa" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="136" Grid.Column="1" />
         <StackPanel Grid.Row="1" Height="52" HorizontalAlignment="Left" Margin="15,127,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="115" Grid.Column="1">
-            <RadioButton Content="szara" Height="16" Name="radioButton1" GroupName="kolor_wnetrza" IsChecked="{Binding Path=Kolor_wnetrza, Mode=TwoWay, 
+            <RadioButton Content="szara" Height="16" Name="radioButton1" GroupName="kolor_wnetrza1" IsChecked="{Binding Path=Kolor_wnetrza, 
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=szaramat}" />
-            <RadioButton Content="czarna" Height="16" Name="radioButton2" GroupName="kolor_wnetrza" IsChecked="{Binding Path=Kolor_wnetrza, Mode=TwoWay, 
+            <RadioButton Content="czarna" Height="16" Name="radioButton2" GroupName="kolor_wnetrza2" IsChecked="{Binding Path=Kolor_wnetrza,
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=czarnamat}"/>
-            <RadioButton Content="bezowa" Height="16" Name="radioButton3" GroupName="kolor_wnetrza" IsChecked="{Binding Path=Kolor_wnetrza, Mode=TwoWay, 
+            <RadioButton Content="bezowa" Height="16" Name="radioButton3" GroupName="kolor_wnetrza3" IsChecked="{Binding Path=Kolor_wnetrza,
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=bezowamat}"/>
 
@@ -59,13 +59,13 @@
         </WrapPanel>
         <Label Content="Tapicerka skórzana" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="20,198,0,114" Name="label4" />
         <StackPanel Grid.Column="1" Grid.Row="1" Height="51" HorizontalAlignment="Left" Margin="15,223,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="114">
-            <RadioButton Content="szara" Height="16" Name="radioButton4" GroupName="kolor_wnetrza" IsChecked="{Binding Path=Kolor_wnetrza, Mode=TwoWay, 
+            <RadioButton Content="szara" Height="16" Name="radioButton4" GroupName="kolor_wnetrza4" IsChecked="{Binding Path=Kolor_wnetrza, 
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=szarask}" />
-            <RadioButton Content="czarna" Height="16" Name="radioButton5" GroupName="kolor_wnetrza" IsChecked="{Binding Path=Kolor_wnetrza, Mode=TwoWay, 
+            <RadioButton Content="czarna" Height="16" Name="radioButton5" GroupName="kolor_wnetrza5" IsChecked="{Binding Path=Kolor_wnetrza,
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=czarnask}"/>
-            <RadioButton Content="beżowa" Height="16" Name="radioButton6" GroupName="kolor_wnetrza" IsChecked="{Binding Path=Kolor_wnetrza, Mode=TwoWay, 
+            <RadioButton Content="beżowa" Height="16" Name="radioButton6" GroupName="kolor_wnetrza6" IsChecked="{Binding Path=Kolor_wnetrza,
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=bezowask}"/>
         </StackPanel>
