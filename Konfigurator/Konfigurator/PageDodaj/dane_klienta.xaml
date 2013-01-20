@@ -9,6 +9,7 @@
     
     <Page.Resources>  
         <local:Switcher x:Key="Switcher" />
+        
     </Page.Resources>
 
     <Page.CommandBindings>
