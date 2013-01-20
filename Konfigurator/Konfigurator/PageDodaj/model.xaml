@@ -37,15 +37,15 @@
             <RadioButton Content="a1" Height="16" Name="rbModel1" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=a1}" />
-            <RadioButton Content="a2" Height="16" Name="rbModel2" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
-                                 Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=a2}" />
-            <RadioButton Content="a3" Height="16" Name="rbModel3" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
+            <RadioButton Content="a3" Height="16" Name="rbModel2" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
                                  ConverterParameter=a3}" />
-            <RadioButton Content="a4" Height="16" Name="rbModel4" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
+            <RadioButton Content="a5" Height="16" Name="rbModel3" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=a4}" />
+                                 ConverterParameter=a5}" />
+            <RadioButton Content="a7" Height="16" Name="rbModel4" GroupName="model" IsChecked="{Binding Path=Model, Mode=TwoWay, 
+                                 Converter={StaticResource RadioButtonToStringConverter},
+                                 ConverterParameter=a7}" />
             
         </StackPanel>
         <Label Content="OPIS" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="380,151,0,0" Name="label3" VerticalAlignment="Top" />
