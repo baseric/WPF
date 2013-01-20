@@ -66,9 +66,6 @@
     <Compile Include="PageDodaj\dodatki.xaml.cs">
       <DependentUpon>dodatki.xaml</DependentUpon>
     </Compile>
-    <Compile Include="edycja_zamowienia.xaml.cs">
-      <DependentUpon>edycja_zamowienia.xaml</DependentUpon>
-    </Compile>
     <Compile Include="baza\Klient.cs" />
     <Compile Include="PageDodaj\model.xaml.cs">
       <DependentUpon>model.xaml</DependentUpon>
@@ -104,10 +101,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageDodaj\dodatki.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="edycja_zamowienia.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
