@@ -3,11 +3,16 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Konfigurator"
       mc:Ignorable="d" 
       d:DesignHeight="464" d:DesignWidth="984"
-	Title="dodatki">   
-    
-    <Grid>
+	Title="dodatki">
+   
+    <Page.Resources>
+        <local:Switcher x:Key="Switcher" />
+    </Page.Resources>
+
+    <Grid DataContext="{Binding Path=Pojazd, Source={StaticResource Switcher}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"></RowDefinition>
             <RowDefinition Height="331*"></RowDefinition>

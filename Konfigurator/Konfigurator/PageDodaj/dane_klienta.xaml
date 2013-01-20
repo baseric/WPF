@@ -8,7 +8,7 @@
       d:DesignHeight="328" d:DesignWidth="398"
 	Title="dane_klienta">
     <Page.Resources>
-        <local:RadioButtonToStringConverter x:Key="RadioButtonToStringConverter" />
+        
         <local:Switcher x:Key="Switcher" />
     </Page.Resources>
 
