@@ -15,6 +15,21 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -164,6 +179,78 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\a1\a1 bialy 3 drzwi.jpg" />
+    <Resource Include="images\a1\a1 bialy.jpg" />
+    <Resource Include="images\a1\a1 brazowy 3 drzwi.jpg" />
+    <Resource Include="images\a1\a1 brazowy.jpg" />
+    <Resource Include="images\a1\a1 czarny 3 drzwi.jpg" />
+    <Resource Include="images\a1\a1 czarny.jpg" />
+    <Resource Include="images\a1\a1 czerwony 3 drzwi.jpg" />
+    <Resource Include="images\a1\a1 czerwony.jpg" />
+    <Resource Include="images\a1\a1 niebieski 3 drzwi.jpg" />
+    <Resource Include="images\a1\a1 niebieski.jpg" />
+    <Resource Include="images\a1\a1 srebrny 3 drzwi.jpg" />
+    <Resource Include="images\a1\a1 srebrny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\a3\a3 bialy 3 drzwi.jpg" />
+    <Resource Include="images\a3\a3 bialy.jpg" />
+    <Resource Include="images\a3\a3 brazowy 3 drzwi.jpg" />
+    <Resource Include="images\a3\a3 brazowy.jpg" />
+    <Resource Include="images\a3\a3 czarny 3 drzwi.jpg" />
+    <Resource Include="images\a3\a3 czarny.jpg" />
+    <Resource Include="images\a3\a3 czerwony 3 drzwi.jpg" />
+    <Resource Include="images\a3\a3 czerwony.jpg" />
+    <Resource Include="images\a3\a3 niebieski 3 drzwi.jpg" />
+    <Resource Include="images\a3\a3 niebieski.jpg" />
+    <Resource Include="images\a3\a3 srebrny 3 drzwi.jpg" />
+    <Resource Include="images\a3\a3 srebrny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\a5\a5 bialy 3 drzwi.jpg" />
+    <Resource Include="images\a5\a5 bialy.jpg" />
+    <Resource Include="images\a5\a5 brazowy 3 drzwi.jpg" />
+    <Resource Include="images\a5\a5 brazowy.jpg" />
+    <Resource Include="images\a5\a5 czarny 3 drzwi.jpg" />
+    <Resource Include="images\a5\a5 czarny.jpg" />
+    <Resource Include="images\a5\a5 czerwony 3 drzwi.jpg" />
+    <Resource Include="images\a5\a5 czerwony.jpg" />
+    <Resource Include="images\a5\a5 niebieski 3 drzwi.jpg" />
+    <Resource Include="images\a5\a5 niebieski.jpg" />
+    <Resource Include="images\a5\a5 srebrny 3 drzwi.jpg" />
+    <Resource Include="images\a5\a5 srebrny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\a7\bialy.jpg" />
+    <Resource Include="images\a7\brazowy.jpg" />
+    <Resource Include="images\a7\czarny.jpg" />
+    <Resource Include="images\a7\czerwony.jpg" />
+    <Resource Include="images\a7\niebieski.jpg" />
+    <Resource Include="images\a7\srebrny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
