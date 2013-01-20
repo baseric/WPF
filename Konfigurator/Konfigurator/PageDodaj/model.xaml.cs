@@ -59,9 +59,10 @@ namespace Konfigurator
 
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void Zamknij(object sender, RoutedEventArgs e)
         {
             Switcher.close(false);
         }
+
     }
 }

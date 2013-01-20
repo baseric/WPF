@@ -29,8 +29,9 @@
             <ColumnDefinition Width="178*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Content="Witaj w naszym konfiguratorze" Grid.Column="1" Height="28" Margin="158,12,245,0" Name="label1" VerticalAlignment="Top" />
-        <Button Content="dalej" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="Dalej" Command="local:CustomCommands.Dalej" />
-        <Button Content="zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" />
+        <Button Content="Wstecz" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,287,0" Name="button12" VerticalAlignment="Top" Click="Wstecz" HorizontalAlignment="Right" Width="75" />
+        <Button Content="Dalej" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="Dalej" Command="local:CustomCommands.Dalej" />
+        <Button Content="Zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" Click="Zamknij" />
         <Label Content="Tapicerka materiałowa" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="136" Grid.Column="1" />
         <StackPanel Grid.Row="1" Height="52" HorizontalAlignment="Left" Margin="15,127,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="115" Grid.Column="1">
             <RadioButton Content="szara" Height="16" Name="radioButton1" GroupName="kolor_wnetrza" IsChecked="{Binding Path=Kolor_wnetrza, Mode=TwoWay, 

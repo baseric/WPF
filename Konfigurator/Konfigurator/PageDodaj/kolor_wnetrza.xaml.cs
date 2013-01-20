@@ -69,9 +69,14 @@ namespace Konfigurator
             }
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void Zamknij(object sender, RoutedEventArgs e)
         {
             Switcher.close(false);
+        }
+
+        private void Wstecz(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new kolor_nadwozia());
         }
     }
 }
