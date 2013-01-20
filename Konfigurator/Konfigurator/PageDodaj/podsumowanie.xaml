@@ -31,13 +31,13 @@
         <Button Content="Wczytaj konfiguracje" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,148,0,0" Name="button3" VerticalAlignment="Top" Width="124" Grid.Column="2" />
         <Button Content="Nowa konfiguracja" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,84,0,0" Name="btnNowaKonfiguracja" VerticalAlignment="Top" Width="124" Grid.Column="2" Click="btnNowaKonfiguracja_Click" />
         <WrapPanel Grid.Row="1" Height="47" HorizontalAlignment="Left" Margin="20,23,0,0" Name="wrapPanel1" VerticalAlignment="Top" Width="720" Grid.Column="1">
-            <Button Content="Model" Height="23" Name="btnModel" Width="75" Visibility="Hidden" />
-            <Button Content="Wersja" Height="23" Name="btnWersja" Width="75" Visibility="Hidden" />
-            <Button Content="Silnik" Height="23" Name="btnSilnik" Width="75" Visibility="Hidden" />
-            <Button Content="Kolor nadwozia" Height="23" Name="btnKolorNadwozia" Width="103" Visibility="Hidden" />
-            <Button Content="Kolor wnetrza" Height="23" Name="btnKolorWnetrza" Width="86" Visibility="Hidden" />
-            <Button Content="Dodatki" Height="23" Name="btnDodatki" Width="75" Visibility="Hidden" />
-            <Button Content="Podsumowanie" Height="23" Name="btnPodsumowanie" Width="91" Visibility="Hidden" />
+            <Button Content="Model" Height="23" Name="btnModel" Width="75" Visibility="Hidden" Click="PrzejdzModel" />
+            <Button Content="Wersja" Height="23" Name="btnWersja" Width="75" Visibility="Hidden" Click="PrzejdzWersja" />
+            <Button Content="Silnik" Height="23" Name="btnSilnik" Width="75" Visibility="Hidden" Click="PrzejdzSilnik" />
+            <Button Content="Kolor nadwozia" Height="23" Name="btnKolorNadwozia" Width="103" Visibility="Hidden" Click="PrzejdzKolorNadwozia" />
+            <Button Content="Kolor wnetrza" Height="23" Name="btnKolorWnetrza" Width="86" Visibility="Hidden" Click="PrzejdzKolorWnetrza" />
+            <Button Content="Dodatki" Height="23" Name="btnDodatki" Width="75" Visibility="Hidden" Click="PrzejdzDodatki" />
+            <Button Content="Podsumowanie" Height="23" Name="btnPodsumowanie" Width="91" Visibility="Hidden" Click="PrzejdzPodsumowanie" />
         </WrapPanel>
         <StackPanel Grid.Column="1" Grid.Row="1" Height="171" HorizontalAlignment="Left" Margin="228,121,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="104">
             <TextBox Height="28" Name="tbModel" Width="92" IsReadOnly="True" Text="{Binding Path=Model}" />

@@ -131,5 +131,40 @@ namespace Konfigurator
             Switcher.Pojazd = new Pojazd();
             Switcher.Switch(new model(0));
         }
+
+        private void PrzejdzModel(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new model(postep));
+        }
+
+        private void PrzejdzWersja(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new wersja(postep));
+        }
+
+        private void PrzejdzSilnik(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new silnik(postep));
+        }
+
+        private void PrzejdzKolorNadwozia(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new kolor_nadwozia(postep));
+        }
+
+        private void PrzejdzKolorWnetrza(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new kolor_wnetrza(postep));
+        }
+
+        private void PrzejdzDodatki(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new dodatki(postep));
+        }
+
+        private void PrzejdzPodsumowanie(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new podsumowanie(postep));
+        }
     }
 }
