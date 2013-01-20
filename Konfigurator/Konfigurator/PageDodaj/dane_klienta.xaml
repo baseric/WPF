@@ -22,7 +22,7 @@
         <Label Content="Adres" Height="28" HorizontalAlignment="Left" Margin="169,100,0,0" Name="label3" VerticalAlignment="Top" />
         <Label Content="Telefon" Height="28" HorizontalAlignment="Left" Margin="160,139,0,0" Name="label4" VerticalAlignment="Top" />
         <Label Content="NIP" Height="28" HorizontalAlignment="Left" Margin="180,182,0,0" Name="label5" VerticalAlignment="Top" />
-        <Label Content="WPROWADZ DANE KLIENTA" Height="28" HorizontalAlignment="Left" Margin="112,15,0,0" Name="label7" VerticalAlignment="Top" />
+        <Label Content="WPROWADź DANE KLIENTA" Height="28" HorizontalAlignment="Left" Margin="112,15,0,0" Name="label7" VerticalAlignment="Top" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="215,59,0,0" Name="textBox1" VerticalAlignment="Top" Width="120" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="215,100,0,0" Name="textBox2" VerticalAlignment="Top" Width="120" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="215,139,0,0" Name="textBox3" VerticalAlignment="Top" Width="120" />

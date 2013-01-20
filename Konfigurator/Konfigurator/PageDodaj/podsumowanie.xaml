@@ -19,29 +19,35 @@
             <ColumnDefinition Width="178*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Content="Witaj w naszym konfiguratorze" Grid.Column="1" Height="28" Margin="158,12,245,0" Name="label1" VerticalAlignment="Top" />
-        <Button Content="Przejdz do zamówienia" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="121" Click="button1_Click" />
+        <Button Content="Przejdź do zamówienia" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,169,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="132" Click="button1_Click" />
         <Button Content="Wstecz" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,331,0" Name="button12" VerticalAlignment="Top" Click="Wstecz" HorizontalAlignment="Right" Width="75" />
-        <Button Content="Zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" Click="Zamknij" />
-        <Label Content="Wersja:" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="115" Grid.Column="1" />
+        <Button Content="Zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" Click="Zamknij" />       
         <Button Content="Wczytaj konfiguracje" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,148,0,0" Name="button3" VerticalAlignment="Top" Width="124" Grid.Column="2" />
         <Button Content="Nowa konfiguracja" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,84,0,0" Name="button4" VerticalAlignment="Top" Width="124" Grid.Column="2" />
         <WrapPanel Grid.Row="1" Height="29" HorizontalAlignment="Left" Margin="78,23,0,0" Name="wrapPanel1" VerticalAlignment="Top" Width="585" Grid.Column="1">
-            <Button Content="model" Height="23" Name="button5" Width="75" />
-            <Button Content="wersja" Height="23" Name="button6" Width="75" />
-            <Button Content="silnik" Height="23" Name="button7" Width="75" />
-            <Button Content="kolor nadwozia" Height="23" Name="button8" Width="103" />
-            <Button Content="kolor wnetrza" Height="23" Name="button9" Width="86" />
-            <Button Content="dodatki" Height="23" Name="button10" Width="75" />
-            <Button Content="podsumowanie" Height="23" Name="button11" Width="91" />
-        </WrapPanel>
-        <Label Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="15,138,0,0" Name="label4" VerticalAlignment="Top" Content="silnik" />
-        <ListBox Grid.Column="1" Grid.Row="1" Height="27" HorizontalAlignment="Left" Margin="130,92,0,0" Name="listBox1" VerticalAlignment="Top" Width="91" />
-        <Label Content="Kolor nadw" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="14,180,0,0" Name="label5" VerticalAlignment="Top" />
-        <Label Content="Tapicerka" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="15,233,0,0" Name="label6" VerticalAlignment="Top" />
-        <Label Content="Dodatki" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="15,286,0,0" Name="label7" VerticalAlignment="Top" />
-        <ListBox Grid.Column="1" Grid.Row="1" Height="29" HorizontalAlignment="Left" Margin="129,137,0,0" Name="listBox2" VerticalAlignment="Top" Width="92" />
-        <ListBox Grid.Column="1" Grid.Row="1" Height="29" HorizontalAlignment="Left" Margin="128,180,0,0" Name="listBox3" VerticalAlignment="Top" Width="92" />
-        <ListBox Grid.Column="1" Grid.Row="1" Height="29" HorizontalAlignment="Left" Margin="128,232,0,0" Name="listBox4" VerticalAlignment="Top" Width="93" />
-        <ListBox Grid.Column="1" Grid.Row="1" Height="30" HorizontalAlignment="Left" Margin="129,285,0,0" Name="listBox5" VerticalAlignment="Top" Width="92" />
+            <Button Content="Model" Height="23" Name="button5" Width="75" />
+            <Button Content="Wersja" Height="23" Name="button6" Width="75" />
+            <Button Content="Silnik" Height="23" Name="button7" Width="75" />
+            <Button Content="Kolor nadwozia" Height="23" Name="button8" Width="103" />
+            <Button Content="Kolor wnętrza" Height="23" Name="button9" Width="86" />
+            <Button Content="Dodatki" Height="23" Name="button10" Width="75" />
+            <Button Content="Podsumowanie" Height="23" Name="button11" Width="91" />
+        </WrapPanel>        
+        <StackPanel Grid.Column="1" Grid.Row="1" Height="171" HorizontalAlignment="Left" Margin="228,121,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="104">
+            <ListBox Height="28" Name="listBox1" Width="92" />
+            <ListBox Height="28" Name="listBox2" Width="92" />
+            <ListBox Height="28" Name="listBox3" Width="92" />
+            <ListBox Height="28" Name="listBox4" Width="92" />
+            <ListBox Height="28" Name="listBox5" Width="92" />
+            <ListBox Height="28" Name="listBox6" Width="92" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" Height="171" HorizontalAlignment="Left" Margin="78,121,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="117">
+            <Label Content="Model:" Height="28" Name="label2" />
+            <Label Content="Wersja:" Height="28" Name="label3" />
+            <Label Content="Silnik:" Height="28" Name="label4" />
+            <Label Content="Kolor nadwozia:" Height="28" Name="label5" />
+            <Label Content="Kolor wnętrza:" Height="28" Name="label6" />
+            <Label Content="Dodatki:" Height="28" Name="label7" />
+        </StackPanel>
     </Grid>
 </Page>
