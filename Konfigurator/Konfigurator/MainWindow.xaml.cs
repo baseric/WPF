@@ -59,16 +59,12 @@ namespace Konfigurator
 
             Dodaj win = new Dodaj(new Pojazd(((Zamowienie)lb.SelectedItem).Pojazd), new Klient(((Zamowienie)lb.SelectedItem).Klient));
 
-            //win.P = ((Zamowienie)lb.SelectedItem).Pojazd;
-            //win.K = ((Zamowienie)lb.SelectedItem).Klient;
             win.edycja = true;
 
             if ((bool)win.ShowDialog())
             {
                 ((Zamowienie)lb.SelectedItem).Pojazd = win.P;
                 ((Zamowienie)lb.SelectedItem).Klient = win.K;
-                //MyDB.Instance.RemoveZamowienie((Zamowienie)lb.SelectedItem);
-                //MyDB.Instance.AddZamowienie(win.k, win.p);
             }
 
             e.Handled = true;
