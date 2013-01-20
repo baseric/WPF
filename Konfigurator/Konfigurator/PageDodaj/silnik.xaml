@@ -15,7 +15,7 @@
     <Page.CommandBindings>
         <CommandBinding Command="local:CustomCommands.Dalej" Executed="Dalej" CanExecute="DalejCanExecute" />
     </Page.CommandBindings>
-    <Grid>
+    <Grid DataContext="{Binding Path=Pojazd, Source={StaticResource Switcher}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"></RowDefinition>
             <RowDefinition Height="331*"></RowDefinition>
@@ -28,19 +28,19 @@
         </Grid.ColumnDefinitions>
         <Label Content="Witaj w naszym konfiguratorze" Grid.Column="1" Height="28" Margin="158,12,245,0" Name="label1" VerticalAlignment="Top" />
         <Button Content="Wstecz" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,287,0" Name="button12" VerticalAlignment="Top" Click="Wstecz" HorizontalAlignment="Right" Width="75" />
-        <Button Content="Dalej" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="Dalej" Command="local:CustomCommands.Dalej"/>
+        <Button Content="Dalej" Grid.Column="1" Grid.Row="2" Height="23" Margin="0,12,180,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Command="local:CustomCommands.Dalej"/>
         <Button Content="Zamknij" Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,12,76,0" Name="button2" VerticalAlignment="Top" Width="75" Click="Zamknij" />
         <Label Content="Benzynowy" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="16,92,0,0" Name="label2" VerticalAlignment="Top" Width="115" Grid.Column="1" />
         <StackPanel Grid.Row="1" Height="52" HorizontalAlignment="Left" Margin="15,127,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="115" Grid.Column="1">
             <RadioButton Content="1.2" Height="16" Name="radioButton1" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=basic}" />
+                                 ConverterParameter=12}" />
             <RadioButton Content="1.4" Height="16" Name="radioButton2" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=advanced}"/>
+                                 ConverterParameter=14}"/>
             <RadioButton Content="1.6" Height="16" Name="radioButton3" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=top}"/>
+                                 ConverterParameter=16}"/>
 
         </StackPanel>
         <Label Content="OPIS" Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="380,151,0,0" Name="label3" VerticalAlignment="Top" />
@@ -59,13 +59,13 @@
         <StackPanel Grid.Column="1" Grid.Row="1" Height="51" HorizontalAlignment="Left" Margin="15,223,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="114">
             <RadioButton Content="1.7" Height="16" Name="radioButton4" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=basic}" />
+                                 ConverterParameter=17}" />
             <RadioButton Content="1.9" Height="16" Name="radioButton5" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=advanced}"/>
+                                 ConverterParameter=19}"/>
             <RadioButton Content="2.0" Height="16" Name="radioButton6" GroupName="silnik" IsChecked="{Binding Path=Silnik, Mode=TwoWay, 
                                  Converter={StaticResource RadioButtonToStringConverter},
-                                 ConverterParameter=top}"/>
+                                 ConverterParameter=20}"/>
         </StackPanel>
         <ListBox Grid.Column="1" Grid.Row="1" Height="100" HorizontalAlignment="Left" Margin="335,198,0,0" Name="listBox1" VerticalAlignment="Top" Width="120" />
     </Grid>
