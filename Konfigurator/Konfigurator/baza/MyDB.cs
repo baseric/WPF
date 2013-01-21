@@ -9,6 +9,7 @@ namespace Konfigurator
     class MyDB
     {
         private static Collection<Zamowienie> list = new ObservableCollection<Zamowienie>();
+        private static Collection<Pojazd> listKonf = new ObservableCollection<Pojazd>();
 
         static MyDB()
         {
@@ -21,6 +22,7 @@ namespace Konfigurator
             p.Kolor_wnetrza = "brazowask";
             p.Klimatyzacja = true;
             p.Radio = true;
+            
             list.Add(new Zamowienie(k, p));
             list.Add(new Zamowienie(k, p));
             list.Add(new Zamowienie(k, p, DateTime.Now.AddMonths(-1)));
@@ -28,6 +30,22 @@ namespace Konfigurator
             list.Add(new Zamowienie(k, p, DateTime.Now.AddMonths(-1)));
             list.Add(new Zamowienie(k, p, DateTime.Now.AddMonths(-2)));
             list.Add(new Zamowienie(k, p, DateTime.Now.AddDays(-17)));
+
+            Pojazd p1 = new Pojazd(p);
+            p1.Model = "a1";
+            listKonf.Add(p1);
+
+            Pojazd p2 = new Pojazd(p);
+            p2.Model = "a3";
+            listKonf.Add(p2);
+
+            Pojazd p3 = new Pojazd(p);
+            p3.Model = "a5";
+            listKonf.Add(p3);
+
+            Pojazd p4 = new Pojazd(p);
+            p4.Model = "a7";
+            listKonf.Add(p4);
         }
 
         private static MyDB singleton = null;
@@ -50,6 +68,14 @@ namespace Konfigurator
         public Collection<Zamowienie> GetZamowienia()
         {
             return list;
+        }
+
+        public Collection<Pojazd> GetPojazdy
+        {
+            get
+            {
+                return listKonf;
+            }
         }
 
         public void RemoveZamowienie(Zamowienie z)

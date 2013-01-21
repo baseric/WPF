@@ -150,5 +150,16 @@ namespace Konfigurator
         {
             Switcher.Switch(new podsumowanie(postep));
         }
+
+        private void btnWczytajKonfiguracje_Click(object sender, RoutedEventArgs e)
+        {
+            WczytajKonf win = new WczytajKonf();
+
+            if ((bool)win.ShowDialog())
+            {
+                Switcher.Pojazd = new Pojazd((Pojazd)win.Konfiguracja.SelectedItem);
+                Switcher.Switch(new kolor_nadwozia(6));
+            }
+        }
     }
 }

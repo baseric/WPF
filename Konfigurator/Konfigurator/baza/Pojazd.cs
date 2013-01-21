@@ -149,5 +149,13 @@ namespace Konfigurator
                 PropertyChanged(this,
                          new PropertyChangedEventArgs(property));
         }
+
+        public string Opis
+        {
+            get
+            {
+                return model + ", " + wersja + ", " + silnik + ", " + kolor_nadwozia;
+            }
+        }
     }
 }

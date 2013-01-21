@@ -34,7 +34,7 @@
             <CheckBox Content="Elementy chromowane" Height="16" Name="checkBox2" IsChecked="{Binding Path=Chrom}" />
             <CheckBox Content="Reflektory ksenonowe" Height="16" Name="checkBox3" IsChecked="{Binding Path=Ksenony}" />
         </StackPanel>
-        <Button Content="Wczytaj konfiguracje" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,148,0,0" Name="button3" VerticalAlignment="Top" Width="124" Grid.Column="2" />
+        <Button Content="Wczytaj konfiguracje" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,148,0,0" Name="btnWczytajKonfiguracje" VerticalAlignment="Top" Width="124" Grid.Column="2" Click="btnWczytajKonfiguracje_Click" />
         <Button Content="Nowa konfiguracja" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="40,84,0,0" Name="btnNowaKonfiguracja" VerticalAlignment="Top" Width="124" Grid.Column="2" Click="btnNowaKonfiguracja_Click" />
         <WrapPanel Grid.Row="1" Height="47" HorizontalAlignment="Left" Margin="20,23,0,0" Name="wrapPanel1" VerticalAlignment="Top" Width="720" Grid.Column="1">
             <Button Content="Model" Height="23" Name="btnModel" Width="75" Visibility="Hidden" Click="PrzejdzModel" />

@@ -110,6 +110,9 @@
     </Compile>
     <Compile Include="baza\Zamowienie.cs" />
     <Compile Include="TapicerkaToImageConverter.cs" />
+    <Compile Include="WczytajKonf.xaml.cs">
+      <DependentUpon>WczytajKonf.xaml</DependentUpon>
+    </Compile>
     <Page Include="PageDodaj\dane_klienta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -155,6 +158,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageDodaj\wersja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WczytajKonf.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
