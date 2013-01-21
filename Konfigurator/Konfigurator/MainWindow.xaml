@@ -26,6 +26,7 @@
     
     <Window.CommandBindings>
         <CommandBinding Command="local:CustomCommands.Edytuj" Executed="Edytuj" CanExecute="EditCanExecute" />
+        <CommandBinding Command="local:CustomCommands.EdytujStatus" Executed="EdytujStatus" CanExecute="EditCanExecute" />
         <CommandBinding Command="local:CustomCommands.Usun" Executed="Usun" CanExecute="EditCanExecute" />
         <CommandBinding Command="local:CustomCommands.Eksport" Executed="Eksport" CanExecute="EditCanExecute" />
     </Window.CommandBindings>
@@ -46,7 +47,7 @@
         <Label Content="Krzysztof Czeszel, Jacek Piotr Bajsicki" Grid.Column="1" Grid.Row="2" Height="33" HorizontalAlignment="Left" Margin="134,8,0,0" Name="label2" VerticalAlignment="Top" />
         <Button Content="Usuń zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,152,0,0" Name="btnDel" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Usun" CommandParameter="{Binding ElementName=lbZamowienia}" />
         <Button Content="Eksportuj do PDF" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,212,0,0" Name="btnExport" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Eksport" CommandParameter="{Binding ElementName=lbZamowienia}" />
-        <Button Content="Zmien status zamówienia" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,271,0,0" Name="btnStat" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Edytuj" CommandParameter="{Binding ElementName=lbZamowienia}" />
+        <Button Content="Zmien status zamówienia" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,271,0,0" Name="btnStat" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.EdytujStatus" CommandParameter="{Binding ElementName=lbZamowienia}" />
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>

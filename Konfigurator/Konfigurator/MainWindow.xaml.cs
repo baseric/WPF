@@ -68,6 +68,21 @@ namespace Konfigurator
             e.Handled = true;
         }
 
+        private void EdytujStatus(object sender, ExecutedRoutedEventArgs e)
+        {
+            ListBox lb = e.Parameter as ListBox;
+
+            /*Dodaj win = new Dodaj(new Pojazd(((Zamowienie)lb.SelectedItem).Pojazd), new Klient(((Zamowienie)lb.SelectedItem).Klient), 6);
+
+            if ((bool)win.ShowDialog())
+            {
+                ((Zamowienie)lb.SelectedItem).Pojazd = win.P;
+                ((Zamowienie)lb.SelectedItem).Klient = win.K;
+            }*/
+
+            e.Handled = true;
+        }
+
         private void Usun(object sender, ExecutedRoutedEventArgs e)
         {
             ListBox lb = e.Parameter as ListBox;
