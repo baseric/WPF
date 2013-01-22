@@ -19,6 +19,8 @@ namespace Konfigurator
     /// </summary>
     public partial class dane_klienta : Page
     {
+        private int _errors = 0;
+
         public dane_klienta()
         {
             InitializeComponent();
@@ -31,10 +33,9 @@ namespace Konfigurator
 
         private void DalejCanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = false;
+            e.CanExecute = true;
 
-            if (!tbNazwa.Text.Equals("") && !tbMsc.Text.Equals("") & !tbAdres.Text.Equals("") & !tbKod.Text.Equals("") & !tbNip.Text.Equals("") & !tbTel.Text.Equals(""))
-                e.CanExecute = true;          
+            e.CanExecute = _errors == 0;      
           
         }
 
@@ -42,6 +43,13 @@ namespace Konfigurator
         {
             Switcher.close(false);
         }
-     
+
+        private void Validation_Error(object sender, ValidationErrorEventArgs e)
+        {
+            if (e.Action == ValidationErrorEventAction.Added)
+                _errors++;
+            else
+                _errors--;
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace Konfigurator
         {
             get
             {
-                return "Pojazd";
+                return p.Model + ", " + p.Wersja + ", " + p.Silnik ;
             }
         }
 

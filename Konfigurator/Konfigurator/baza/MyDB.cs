@@ -13,7 +13,7 @@ namespace Konfigurator
 
         static MyDB()
         {
-            Klient k = new Klient("asd","ul. asd 1/21", "15-000", "asd", "1234567890", "0700");
+            Klient k = new Klient("Jan Kowalski","ul. asd 1/21", "15-000", "Białystok", "1234567890", "857666666");
             Pojazd p = new Pojazd();
             p.Model = "a3";
             p.Wersja = "advanced";

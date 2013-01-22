@@ -9,7 +9,15 @@
     
     <Page.Resources>  
         <local:Switcher x:Key="Switcher" />
-        
+
+        <Style TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="true">
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0].ErrorContent}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
     </Page.Resources>
 
     <Page.CommandBindings>
@@ -40,12 +48,60 @@
         <Label Grid.Row="5" Content="Telefon" Height="28" HorizontalAlignment="Right" Name="label4" />
         <Label Grid.Row="6" Content="NIP" Height="28" HorizontalAlignment="Right" Name="label5" />
         <Label Grid.ColumnSpan="2" Content="WPROWADź DANE KLIENTA" Height="28" HorizontalAlignment="Center" Name="label7" />
-        <TextBox Grid.Row="1" Grid.Column="1" Height="23" Name="tbNazwa" Margin="5" Text="{Binding Path=Name}" />
-        <TextBox Grid.Row="2" Grid.Column="1" Height="23" Name="tbAdres" Margin="5" Text="{Binding Path=Adres}" />
-        <TextBox Grid.Row="3" Grid.Column="1" Height="23" Name="tbMsc" Margin="5" Text="{Binding Path=Msc}" />
-        <TextBox Grid.Row="4" Grid.Column="1" Height="23" Name="tbKod" Margin="5" Text="{Binding Path=Kod}" />
-        <TextBox Grid.Row="5" Grid.Column="1" Height="23" Name="tbTel" Margin="5" Text="{Binding Path=Tel}" />
-        <TextBox Grid.Row="6" Grid.Column="1" Height="23" Name="tbNip" Margin="5" Text="{Binding Path=Nip}" />
+        <TextBox Grid.Row="1" Grid.Column="1" Height="23" Name="tbNazwa" Margin="5" Validation.Error="Validation_Error">
+            <TextBox.Text>
+                <Binding Path="Name" UpdateSourceTrigger="PropertyChanged" NotifyOnValidationError="True">
+                    <Binding.ValidationRules>
+                        <DataErrorValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Height="23" Name="tbAdres" Margin="5">
+            <TextBox.Text>
+                <Binding Path="Adres" UpdateSourceTrigger="PropertyChanged" NotifyOnValidationError="True">
+                    <Binding.ValidationRules>
+                        <DataErrorValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Height="23" Name="tbMsc" Margin="5">
+            <TextBox.Text>
+                <Binding Path="Msc" UpdateSourceTrigger="PropertyChanged" NotifyOnValidationError="True">
+                    <Binding.ValidationRules>
+                        <DataErrorValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox Grid.Row="4" Grid.Column="1" Height="23" Name="tbKod" Margin="5" Validation.Error="Validation_Error">
+            <TextBox.Text>
+                <Binding Path="Kod" UpdateSourceTrigger="PropertyChanged" NotifyOnValidationError="True">
+                    <Binding.ValidationRules>
+                        <DataErrorValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox Grid.Row="5" Grid.Column="1" Height="23" Name="tbTel" Margin="5">
+            <TextBox.Text>
+                <Binding Path="Tel" UpdateSourceTrigger="PropertyChanged" NotifyOnValidationError="True">
+                    <Binding.ValidationRules>
+                        <DataErrorValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox Grid.Row="6" Grid.Column="1" Height="23" Name="tbNip" Margin="5">
+            <TextBox.Text>
+                <Binding Path="Nip" UpdateSourceTrigger="PropertyChanged" NotifyOnValidationError="True">
+                    <Binding.ValidationRules>
+                        <DataErrorValidationRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
         <Button Grid.Row="7" Content="Zapisz" Height="23" HorizontalAlignment="Right" Name="button1" Margin="5" Width="75" Command="local:CustomCommands.Dalej" />
         <Button Grid.Row="7" Grid.Column="1" Content="Anuluj" Height="23" HorizontalAlignment="Left" Margin="5" Name="button2" Width="75" Click="button2_Click" />
     </Grid>
