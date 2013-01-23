@@ -132,26 +132,6 @@ namespace Konfigurator
         {
             if (view != null)
                 view.Filter = null;
-        }
-
-        private void zamknij(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void drukuj(object sender, RoutedEventArgs e)
-        {
-            PrintDialog printDialog = new PrintDialog();
-
-            if (printDialog.ShowDialog() == true)
-            {
-
-                //drukowanie 
-
-            }
-        }
-
-
-       
+        }      
     }
 }
