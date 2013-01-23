@@ -104,6 +104,9 @@
     <Compile Include="PojazdToImageConverter.cs" />
     <Compile Include="RadioButtonToStringConverter.cs" />
     <Compile Include="RokFilter.cs" />
+    <Compile Include="status.xaml.cs">
+      <DependentUpon>status.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Switcher.cs" />
     <Compile Include="PageDodaj\wersja.xaml.cs">
       <DependentUpon>wersja.xaml</DependentUpon>
@@ -158,6 +161,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageDodaj\wersja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="status.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

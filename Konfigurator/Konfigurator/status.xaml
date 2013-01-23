@@ -1,0 +1,29 @@
+﻿<Window x:Class="Konfigurator.status"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Konfigurator"
+        Title="status" Height="269" Width="450"
+    Background="Transparent">
+        <Window.Resources>
+            <local:MyDB x:Key="MyDB" />
+        </Window.Resources>
+    <Grid>
+        <Border BorderThickness="3" CornerRadius="30,30,30,30" BorderBrush="Black" Background="LightGray" MouseLeftButtonDown="Border_MouseLeftButtonDown"></Border>
+        <WrapPanel Margin="12,12,12,22" Width="400" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Height="132" Name="stackPanel1" Width="200" DataContext="{Binding Path=GetPojazdy, Source={StaticResource MyDB}}">
+                <Label Content="Wybierz zamówienie:" Height="52" Name="label1" />
+                <Label Content="Status:" Height="51" Name="label2" />
+            </StackPanel>
+            <StackPanel Height="132" Name="stackPanel2" Width="200">
+                <ComboBox Height="45" Name="comboBox1" Width="auto" SelectedIndex="0" ItemsSource="{Binding}" DisplayMemberPath="Opis" />
+                <ComboBox Height="44" Name="comboBox2" Width="auto">
+                    <ComboBoxItem Name="status1">zrealizowane</ComboBoxItem>
+                    <ComboBoxItem Name="status2">w trakcie</ComboBoxItem>
+                    <ComboBoxItem Name="status3">nowe</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <Button Content="Zmień status" Height="23" Name="button1" Width="75" Click="Zmien_Click" />
+            <Button Content="Anuluj" Height="23" Name="button2" Width="75" Click="Anuluj_Click" />
+        </WrapPanel>
+    </Grid>
+</Window>
