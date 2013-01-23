@@ -94,6 +94,12 @@
                 <Button Content="Zastosuj filtr" Margin="3" Click="FiltrRok" />
                 <Button Content="Usuń filtr" Margin="3" Click="FiltrCancel" />
             </StackPanel>            
-        </Grid>     
+        </Grid>
+        <Menu DockPanel.Dock="top" Margin="0,0,124,26">
+            <MenuItem Header="Plik">
+                <MenuItem Header="Zamknij"></MenuItem>
+                <MenuItem Header="Drukuj"></MenuItem>                
+            </MenuItem>
+        </Menu>
     </Grid>   
 </Window>
