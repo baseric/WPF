@@ -1,8 +1,27 @@
 ﻿<Window x:Class="Konfigurator.dane"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="dane" Height="300" Width="300">
+        Title="dane" Height="300" Width="423">
     <Grid>
-        
+        <DockPanel Height="261" HorizontalAlignment="Left" Name="dockPanel1" VerticalAlignment="Top" Width="401">
+            <StackPanel Height="254" Name="stackPanel1" Width="200">
+                <Label Content="Dane klienta:" Height="28" Name="label1" />
+                <Label Content="Label" Height="28" Name="label3" />
+                <Label Content="Label" Height="28" Name="label4" />
+                <Label Content="Label" Height="28" Name="label5" />
+                <Label Content="Label" Height="28" Name="label6" />
+                <Label Content="Label" Height="28" Name="label7" />
+                <Label Content="Label" Height="28" Name="label8" />
+            </StackPanel>
+            <StackPanel Height="254" Name="stackPanel2" Width="200">
+                <Label Content="Dane zamówienia" Height="28" Name="label2" />
+                <Label Content="Label" Height="28" Name="label9" />
+                <Label Content="Label" Height="28" Name="label10" />
+                <Label Content="Label" Height="28" Name="label11" />
+                <Label Content="Label" Height="28" Name="label12" />
+                <Label Content="Label" Height="28" Name="label13" />
+                <Label Content="Label" Height="28" Name="label14" />
+            </StackPanel>
+        </DockPanel>
     </Grid>
 </Window>
