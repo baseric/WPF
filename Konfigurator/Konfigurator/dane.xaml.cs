@@ -18,9 +18,23 @@ namespace Konfigurator
     /// </summary>
     public partial class dane : Window
     {
-        public dane()
+        Zamowienie z;
+
+        public Zamowienie Z
         {
+            set { z = value; }
+            get { return z; }
+        }
+
+        public dane(Zamowienie _z)
+        {
+            z = _z;
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

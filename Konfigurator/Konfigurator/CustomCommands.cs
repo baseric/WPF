@@ -11,7 +11,7 @@ namespace Konfigurator
         public static RoutedUICommand edytuj;
         public static RoutedUICommand edytujStatus;
         public static RoutedUICommand usun;
-        public static RoutedUICommand eksport;
+        public static RoutedUICommand podglad;
         public static RoutedUICommand dalej;
 
         static CustomCommands()
@@ -19,7 +19,7 @@ namespace Konfigurator
             edytuj = new RoutedUICommand("Edytuj zamowienie", "Edytuj", typeof(CustomCommands));
             edytujStatus = new RoutedUICommand("Edytuj status zamówienia", "EdytujStatus", typeof(CustomCommands));
             usun = new RoutedUICommand("Usun zamowienie", "Usun", typeof(CustomCommands));
-            eksport = new RoutedUICommand("Eksportuj do pdf", "Eksportuj", typeof(CustomCommands));
+            podglad = new RoutedUICommand("Podgląd zamówienia", "Podglad", typeof(CustomCommands));
             dalej = new RoutedUICommand("Przejdz dalej", "Dalej", typeof(CustomCommands));
         }
 
@@ -38,9 +38,9 @@ namespace Konfigurator
             get { return usun; }
         }
 
-        public static RoutedUICommand Eksport
+        public static RoutedUICommand Podglad
         {
-            get { return eksport; }
+            get { return podglad; }
         }
 
         public static RoutedUICommand Dalej

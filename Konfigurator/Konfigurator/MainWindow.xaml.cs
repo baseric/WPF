@@ -74,10 +74,7 @@ namespace Konfigurator
 
             status win = new status((Zamowienie)lb.SelectedItem);
 
-            if ((bool)win.ShowDialog())
-            {
-
-            }
+            win.ShowDialog();
 
             e.Handled = true;
         }
@@ -95,13 +92,13 @@ namespace Konfigurator
             e.Handled = true;
         }
 
-        private void Eksport(object sender, ExecutedRoutedEventArgs e)
+        private void Podglad(object sender, ExecutedRoutedEventArgs e)
         {
-            /*ListBox lb = e.Parameter as ListBox;
+            ListBox lb = e.Parameter as ListBox;
 
-            lb.Items.Insert(0, Zdjete.Text);
-            Zdjete.Text = "";
-            lb.Items.Refresh();*/
+            dane win = new dane((Zamowienie)lb.SelectedItem);
+
+            win.ShowDialog();
 
             e.Handled = true;
         }

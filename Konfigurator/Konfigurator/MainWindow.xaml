@@ -28,7 +28,7 @@
         <CommandBinding Command="local:CustomCommands.Edytuj" Executed="Edytuj" CanExecute="EditCanExecute" />
         <CommandBinding Command="local:CustomCommands.EdytujStatus" Executed="EdytujStatus" CanExecute="EditCanExecute" />
         <CommandBinding Command="local:CustomCommands.Usun" Executed="Usun" CanExecute="EditCanExecute" />
-        <CommandBinding Command="local:CustomCommands.Eksport" Executed="Eksport" CanExecute="EditCanExecute" />
+        <CommandBinding Command="local:CustomCommands.Podglad" Executed="Podglad" CanExecute="EditCanExecute" />
     </Window.CommandBindings>
     
     <Grid>
@@ -64,7 +64,7 @@
         <Button Content="_Nowe zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,29,0,0" Name="btnNew" VerticalAlignment="Top" Width="146" Click="btnNew_Click" ToolTip="Składanie nowego zamówienia" />
         <Label Content="Krzysztof Czeszel, Jacek Piotr Bajsicki" Grid.Column="1" Grid.Row="2" Height="33" HorizontalAlignment="Left" Margin="134,8,0,0" Name="label2" VerticalAlignment="Top" />
         <Button Content="_Usuń zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,152,0,0" Name="btnDel" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Usun" CommandParameter="{Binding ElementName=lbZamowienia}" ToolTip="Usunięcie wybranego zamówienia" />
-        <Button Content="E_ksportuj do PDF" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,212,0,0" Name="btnExport" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Eksport" CommandParameter="{Binding ElementName=lbZamowienia}" ToolTip="Eksport zamówienia do PDF" />
+        <Button Content="_Podgląd zamówieia" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,212,0,0" Name="btnPodglad" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Podglad" CommandParameter="{Binding ElementName=lbZamowienia}" ToolTip="Podgląd wybranego zamówienia" />
         <Button Content="_Zmien status zamówienia" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,271,0,0" Name="btnStat" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.EdytujStatus" CommandParameter="{Binding ElementName=lbZamowienia}" ToolTip="Zmiana statusu zaznaczonego zamówienia" />
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
