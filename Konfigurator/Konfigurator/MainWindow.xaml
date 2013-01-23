@@ -60,12 +60,12 @@
         </Ellipse>
         
         <Label Content="Witaj w naszym salonie" Grid.Column="1" Height="28" Margin="150,12,0,0" Name="label1" VerticalAlignment="Top" />
-        <Button Content="Edycja zamowienia" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,93,0,0" Name="btnEdit" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Edytuj" CommandParameter="{Binding ElementName=lbZamowienia}" />
-        <Button Content="Nowe zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,29,0,0" Name="btnNew" VerticalAlignment="Top" Width="146" Click="btnNew_Click" />
+        <Button Content="_Edycja zamowienia" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,93,0,0" Name="btnEdit" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Edytuj" CommandParameter="{Binding ElementName=lbZamowienia}" ToolTip="Edycja wybranego zamówienia" />
+        <Button Content="_Nowe zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,29,0,0" Name="btnNew" VerticalAlignment="Top" Width="146" Click="btnNew_Click" ToolTip="Składanie nowego zamówienia" />
         <Label Content="Krzysztof Czeszel, Jacek Piotr Bajsicki" Grid.Column="1" Grid.Row="2" Height="33" HorizontalAlignment="Left" Margin="134,8,0,0" Name="label2" VerticalAlignment="Top" />
-        <Button Content="Usuń zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,152,0,0" Name="btnDel" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Usun" CommandParameter="{Binding ElementName=lbZamowienia}" />
-        <Button Content="Eksportuj do PDF" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,212,0,0" Name="btnExport" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Eksport" CommandParameter="{Binding ElementName=lbZamowienia}" />
-        <Button Content="Zmien status zamówienia" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,271,0,0" Name="btnStat" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.EdytujStatus" CommandParameter="{Binding ElementName=lbZamowienia}" />
+        <Button Content="_Usuń zamówienie" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,152,0,0" Name="btnDel" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Usun" CommandParameter="{Binding ElementName=lbZamowienia}" ToolTip="Usunięcie wybranego zamówienia" />
+        <Button Content="E_ksportuj do PDF" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,212,0,0" Name="btnExport" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.Eksport" CommandParameter="{Binding ElementName=lbZamowienia}" ToolTip="Eksport zamówienia do PDF" />
+        <Button Content="_Zmien status zamówienia" Grid.Row="1" Height="45" HorizontalAlignment="Left" Margin="12,271,0,0" Name="btnStat" VerticalAlignment="Top" Width="146" Command="local:CustomCommands.EdytujStatus" CommandParameter="{Binding ElementName=lbZamowienia}" ToolTip="Zmiana statusu zaznaczonego zamówienia" />
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
@@ -75,7 +75,7 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             
-            <ListBox Name="lbZamowienia" Margin="5" ItemTemplate="{StaticResource DataTemplate}">
+            <ListBox Name="lbZamowienia" Margin="5" ItemTemplate="{StaticResource DataTemplate}" ToolTip="Aktualne zamówienia">
             <ListBox.GroupStyle>
                 <GroupStyle>
                     <GroupStyle.HeaderTemplate>
@@ -86,7 +86,7 @@
                 </GroupStyle>
             </ListBox.GroupStyle>
         </ListBox>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" ToolTip="Filtrowanie zamówień">
                 <Label Content="Rok od" Margin="3" />
                 <TextBox Name="RokOd" Text="2013" Margin="3" />
                 <Label Content="do" Margin="3" />
