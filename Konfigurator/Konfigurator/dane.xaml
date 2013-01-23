@@ -6,8 +6,8 @@
     <Window.Resources>
         <local:PojazdToImageConverter x:Key="PojazdToImageConverter" />
     </Window.Resources>
-    <StackPanel>
-    <Grid Height="500" Width="615">
+    <StackPanel VerticalAlignment="Top">
+    <Grid Height="500" Width="615" Name="Zamowienie">
         <Grid.RowDefinitions>
                 <RowDefinition Height="50*" />
                 <RowDefinition Height="33*" />
@@ -59,7 +59,7 @@
             <Image Grid.ColumnSpan="4" Grid.Row="9" Name="img" Stretch="Fill" Source="{Binding Z.Pojazd, ElementName=WinPodglad, Converter={StaticResource PojazdToImageConverter}}" />
     </Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Drukuj" Height="23" Name="button1" Width="75" HorizontalAlignment="Center" />
+            <Button Content="Drukuj" Height="23" Name="button1" Width="75" HorizontalAlignment="Center" Click="button1_Click" />
             <Button Content="Zamknij" Height="23" Name="button2" Width="75" HorizontalAlignment="Center" Click="button2_Click" />
         </StackPanel>
     </StackPanel>

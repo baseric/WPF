@@ -36,5 +36,27 @@ namespace Konfigurator
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+
+            if (printDialog.ShowDialog() == true)
+            {
+                // Define a margin.
+                int pageMargin = 5;
+                // Get the size of the page.
+                Size pageSize = new Size(printDialog.PrintableAreaWidth -
+                       pageMargin * 2, 520);
+                // Trigger the sizing of the element.
+                Zamowienie.Measure(pageSize);
+                Zamowienie.Arrange(new Rect(pageMargin, pageMargin,
+                                       pageSize.Width, pageSize.Height));
+                printDialog.PrintVisual(Zamowienie, "Zamówienie");
+
+                Zamowienie.Arrange(new Rect(0,0,634,500));
+
+            }
+        }
     }
 }
