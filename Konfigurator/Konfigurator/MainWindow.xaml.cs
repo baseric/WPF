@@ -72,13 +72,12 @@ namespace Konfigurator
         {
             ListBox lb = e.Parameter as ListBox;
 
-            /*Dodaj win = new Dodaj(new Pojazd(((Zamowienie)lb.SelectedItem).Pojazd), new Klient(((Zamowienie)lb.SelectedItem).Klient), 6);
+            status win = new status((Zamowienie)lb.SelectedItem);
 
             if ((bool)win.ShowDialog())
             {
-                ((Zamowienie)lb.SelectedItem).Pojazd = win.P;
-                ((Zamowienie)lb.SelectedItem).Klient = win.K;
-            }*/
+
+            }
 
             e.Handled = true;
         }

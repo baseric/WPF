@@ -18,18 +18,41 @@ namespace Konfigurator
     /// </summary>
     public partial class status : Window
     {
-        public status()
+        private Zamowienie z;
+        private string old;
+        string[] statusy = { "Nowe", "W trakcie realizacji", "Zrealizowane" };
+
+        public Zamowienie Z
         {
+            set { z = value; }
+            get { return z; }
+        }
+
+        public string Old
+        {
+            get { return old; }
+            set { old = value; }
+        }
+
+        public status(Zamowienie _z)
+        {
+            z = _z;
+            old = z.getStatus;
             InitializeComponent();
+
+            cbStatus.ItemsSource = statusy;
+
         }
         private void Anuluj_Click(object sender, RoutedEventArgs e)
         {
+            z.getStatus = old;
             DialogResult = false;
             Close();
         }
 
         private void Zmien_Click(object sender, RoutedEventArgs e)
         {
+            z.getStatus = cbStatus.SelectedItem.ToString();
             DialogResult = true;
             Close();
         }

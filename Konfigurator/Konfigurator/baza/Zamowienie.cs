@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace Konfigurator
 {
-    class Zamowienie : INotifyPropertyChanged
+    public class Zamowienie : INotifyPropertyChanged
     {
         Klient k;
         Pojazd p;
@@ -47,6 +47,11 @@ namespace Konfigurator
 
         public string getStatus
         {
+            set
+            {
+                status = value;
+                OnPropertyChanged("");
+            }
             get
             {
                 return status;
