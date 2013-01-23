@@ -11,8 +11,9 @@
         <Border BorderThickness="3" CornerRadius="30,30,30,30" BorderBrush="Black" Background="LightGray" MouseLeftButtonDown="Border_MouseLeftButtonDown"></Border>
         <WrapPanel Margin="12,12,12,22" Width="400" VerticalAlignment="Center" HorizontalAlignment="Center">
             <StackPanel Height="132" Name="stackPanel1" Width="200" DataContext="{Binding Path=GetPojazdy, Source={StaticResource MyDB}}">
-                <Label Content="Wybierz zamówienie:" Height="52" Name="label1" />
-                <Label Content="Status:" Height="51" Name="label2" />
+                <Label Content="Wybierz zamówienie:" Height="53" Name="label1" />
+                <Label Content="Wybierz status:" Height="45" Name="label2" />
+                <Label Content="Aktualny status:" Height="31" Name="label3" />
             </StackPanel>
             <StackPanel Height="132" Name="stackPanel2" Width="200">
                 <ComboBox Height="45" Name="comboBox1" Width="auto" SelectedIndex="0" ItemsSource="{Binding}" DisplayMemberPath="Opis" />
@@ -21,6 +22,7 @@
                     <ComboBoxItem Name="status2">w trakcie</ComboBoxItem>
                     <ComboBoxItem Name="status3">nowe</ComboBoxItem>
                 </ComboBox>
+                <ListBox Height="41" Name="listBox1" Width="auto" />
             </StackPanel>
             <Button Content="Zmień status" Height="23" Name="button1" Width="75" Click="Zmien_Click" />
             <Button Content="Anuluj" Height="23" Name="button2" Width="75" Click="Anuluj_Click" />
