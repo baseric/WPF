@@ -72,6 +72,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CustomCommands.cs" />
+    <Compile Include="dane.xaml.cs">
+      <DependentUpon>dane.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataGrouper.cs" />
     <Compile Include="PageDodaj\dane_klienta.xaml.cs">
       <DependentUpon>dane_klienta.xaml</DependentUpon>
@@ -116,6 +119,10 @@
     <Compile Include="WczytajKonf.xaml.cs">
       <DependentUpon>WczytajKonf.xaml</DependentUpon>
     </Compile>
+    <Page Include="dane.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageDodaj\dane_klienta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
